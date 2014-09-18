@@ -23,11 +23,11 @@ class Users_model extends CI_Model {
         return $query->row_array();
     }
     
-    public function set_user() {
-        $hashed_password = crypt($this->input->post('pwd'));
+    public function set_user($username,$email,$pwd) {
+        $hashed_password = crypt($pwd);
         $data = array(
-            'Name' => $this->input->post('username'),
-            'Email' => $this->input->post('email'),
+            'Name' => $username,
+            'Email' => $email,
             'Pwd' => $hashed_password
         );
 

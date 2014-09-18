@@ -7,6 +7,7 @@ class Users extends CI_Controller {
         parent::__construct();
         $this->load->model('users_model');
         $this->load->model('u_dashboard_model');
+        $this->load->library('session');
         
     }
     
@@ -20,28 +21,40 @@ class Users extends CI_Controller {
     {
         try{
             /** save user info into database here**/
-            $this->users_model->set_user();
             $username = $this->input->post('username');
-            $this->users_model->set_user_account($username);
+            if(isset($username)){
+                $email = $this->input->post('email');
+                $pwd = $this->input->post('pwd');
+                $this->users_model->set_user($username,$email,$pwd);
+                $this->users_model->set_user_account($username);
 
-            session_start();
-            $_SESSION['username'] = $username;
-            $this->load->view('templates/viewpal_header');
-            $this->load->view('users/newuser_welcome'); 
+                //set session
+                $newdata = array('username' => $username);
+                $this->session->set_userdata($newdata);
+                //set data
+                $data['username'] = $username;
+                $this->load->view('templates/viewpal_header');
+                $this->load->view('users/newuser_welcome',$data);
+            } else {
+                show_404();
+            }
         } catch (Exception $ex) {
-            echo 'Caught exception: ',  $e->getMessage(), "\n";
+            echo 'Caught exception: ',  $ex->getMessage(), "\n";
         }
 
     }
     
     public function dashboard()
     {
-        session_start();
+        //session_start();
         $user_url_input = filter_input(INPUT_GET, 'username');
-        if($user_url_input && isset($_SESSION['username']))
+        $username = $this->session->userdata('username');
+        
+        if($user_url_input && isset($username))
         {
-            if( $user_url_input == $_SESSION['username']){
-                $username = $_SESSION['username'];
+            if( $user_url_input == $username){
+                //$username = $_SESSION['username'];
+                
                 $balance = $this->u_dashboard_model->get_user_balance($username);
                 $lastdate = $this->u_dashboard_model->get_user_lastdate($username);
                 
@@ -80,8 +93,10 @@ class Users extends CI_Controller {
         if($status == 2)
         {
             //setcookie('vp_username', $username, time()+3600, '/vpaccount', base_url());
-            session_start();
-            $_SESSION['username'] = $username;
+            //session_start();
+            //$_SESSION['username'] = $username;
+            $newdata = array('username' => $username);
+            $this->session->set_userdata($newdata);
             echo $username;
         }
         else
@@ -92,25 +107,28 @@ class Users extends CI_Controller {
     
     public function logout()
     {
-        session_start();
-        unset($_SESSION['username']);
+        //session_start();
+        //unset($_SESSION['username']);
+        $this->session->unset_userdata('username');
         header('Location: '.base_url());
     }
     
     public function checkout()
     {
-        session_start();
-        $username = $_SESSION['username'];
+        // Set transac into db
+        $username = $this->session->userdata('username');
         $balance_dollar = $this->u_dashboard_model->get_user_balance($username);
         $balance_cent = $balance_dollar * 100;
         $amount = 500.00;        
         $new_balance_cent = $balance_cent + $amount;
         $new_balance_dollar = $new_balance_cent/100;
         $status = $this->users_model->checkout($username,$amount,$new_balance_dollar);
+        
+        $data['username'] = $username;
         if($status == 1)
         {
             $this->load->view('templates/viewpal_header');
-            $this->load->view('users/transaction_done.php');
+            $this->load->view('users/transaction_done.php',$data);
             $this->load->view('templates/footer');
         }else{
             $this->load->view('templates/transaction_error.php');

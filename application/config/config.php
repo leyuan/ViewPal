@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8080/codeigniter/sample_tutorial/';
+$config['base_url']	= 'http://localhost:8080/git/viewpal/';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'RH2T5456U21HFkEu7u7Rgz8GNNT20Ipz';
 
 /*
 |--------------------------------------------------------------------------
