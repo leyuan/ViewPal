@@ -92,7 +92,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#" class=""><i class="icon16 i-cogs"></i> Settings</a></li>
                                 <li><a href="profile.html" class=""><i class="icon16 i-user"></i> Profile</a></li>
-                                <li><a href="<?php echo base_url()."index.php/logout"?>" class=""><i class="icon16 i-exit"></i> Logout</a></li>
+                                <li><a href="<?php echo base_url()."index.php/webmaster/logout"?>" class=""><i class="icon16 i-exit"></i> Logout</a></li>
                             </ul>
                         </li>
                         <li class="divider-vertical"></li>

@@ -55,12 +55,12 @@
                                     </div>
                                     <div class="">
                                         <div class="dashboard-summary-row">
-                                            <span class="span6">Name: <?php echo $summary['mid'];?></span>
-                                            <span class="span6">Register Date: <?php echo $summary['date'];?></span>
+                                            <span class="span6">Name: <p class="good-blue-medium"><?php echo $summary['mid'];?></p></span>
+                                            <span class="span6">Register Date: <p class="good-blue-medium"><?php echo $summary['date'];?></p></span>
                                         </div>
                                         <div class="dashboard-summary-row">
-                                            <span class="span6">Number of Transactions:</span>
-                                            <span class="span6">Total money earned:</span>   
+                                            <span class="span6">Number of Transactions:<p class="good-blue-medium"><?php echo $summary['transaction'];?></p></span>
+                                            <span class="span6">Total money earned:<p class="good-blue-medium"><?php echo $summary['total'];?></p></span>   
                                         </div>
                                     </div>
                                 </div>

@@ -73,10 +73,27 @@ class Wm_model extends CI_Model {
         {
             $row = $query -> row();
             $summary = array();
-            $summary['mid'] = $row->Mid;
+            $mid = $row->Mid;
+            $summary['mid'] = $mid;
             $summary['date'] = $row->Date;
-            return $summary;            
+            
+            // get number of transactions
+            $sql2 = "select COUNT(Id) as Transaction from payments where Mid='".$mid."'";
+            $query = $this->db->query($sql2);
+            $row2 = $query -> row();
+            $transaction = $row2 -> Transaction;
+            $summary['transaction'] = $transaction;
+            
+            // get total money earned
+            $sql3 = "select SUM(Cost) as Total from payments where Mid='".$mid."'";
+            $query = $this->db->query($sql3);
+            $row3 = $query -> row();
+            $total = $row3 -> Total;
+            $summary['total'] = $total;
+            
+            return $summary;
         }
+        
     }
 }
 

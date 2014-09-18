@@ -1,4 +1,4 @@
-<?php if(isset($_SESSION['username'])){ ?>
+<?php if(isset($username)){ ?>
     <div class="">
         <h4> Welcome back 
             <a href="<?php echo base_url()."index.php/user/dashboard?username=".$_SESSION['username'];?>">
