@@ -14,27 +14,31 @@ class Webmasters extends CI_Controller {
     public function howdy()
     {
         $this->load->view('templates/viewpal_header');
-        $this->load->view('users/webmasters/howdy');
+        $this->load->view('webmasters/howdy');
     }
     
     public function signup()
     {
         $this->load->view('templates/viewpal_header');
-        $this->load->view('users/webmasters/wm_signupform');
+        $this->load->view('webmasters/wm_signupform');
     }
     
     public function newwm_welcome()
     {
         try{
             /** save user info into database here**/
-            $this->wm_model->set_wm();
+            $name = $this->input->post('wmname');
+            $pwd = $this->input->post('wmpwd');
+            $email = $this->input->post('wmemail');
+            $website = $this->input->post('weburl');
+            $this->wm_model->set_wm($name,$pwd,$email,$website);
             $wmname = $this->input->post('wmname');
             session_start();
-            echo $wmname;
+            //echo $wmname;
             $_SESSION['wmname'] = $wmname;
             $data['wmname'] = $wmname;
             $this->load->view('templates/viewpal_header');
-            $this->load->view('users/webmasters/welcome',$data); 
+            $this->load->view('webmasters/welcome',$data); 
         } catch (Exception $ex) {
             echo 'Caught exception: ',  $e->getMessage(), "\n";
         }        
@@ -77,9 +81,12 @@ class Webmasters extends CI_Controller {
                 $mid = $this->wm_model->get_mid($wmname);
                 $data['title'] = "Dashboard | ".$wmname;
                 $data['wmname'] = $wmname;
-                $data['mid'] = $mid;
-                $this->load->view('templates/dashboard_header',$data);
-                $this->load->view('users/webmasters/dashboard',$data);
+                //$data['mid'] = $mid;               
+                $summary = $this->wm_model->get_summary($wmname);
+                $data['summary'] = $summary;
+                $this->load->view('webmasters/dashboard/header',$data);
+                $this->load->view('webmasters/dashboard/dashboard',$data);
+                $this->load->view('webmasters/dashboard/footer',$data);
             }else{
                 //should show 403
                 show_404();

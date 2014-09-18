@@ -70,9 +70,9 @@ class Users extends CI_Controller {
                  * 
                  */
                 // Using Admin Template instead of original one
-                $this->load->view('dashboard/header', $data);
-                $this->load->view('dashboard/dashboard', $data);
-                $this->load->view('dashboard/footer');
+                $this->load->view('users/dashboard/header', $data);
+                $this->load->view('users/dashboard/dashboard', $data);
+                $this->load->view('users/dashboard/footer');
                 
             }else{
                 //should show 403

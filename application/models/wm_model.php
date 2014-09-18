@@ -12,18 +12,18 @@ class Wm_model extends CI_Model {
         $this->load->database();
     }
     
-    public function set_wm(){
-        $hashed_password = crypt($this->input->post('wmpwd'));
+    public function set_wm($name,$pwd,$email,$website){
+        $hashed_password = crypt($pwd);
         $prefix = "vp";
         $mid = $prefix.uniqid();
         $data = array(
             'Mid' => $mid,
-            'Name' => $this->input->post('wmname'),
-            'Email' => $this->input->post('wmemail'),
+            'Name' => $name,
+            'Email' => $email,
             'Pwd' => $hashed_password,
-            'website_url' => $this->input->post('weburl')
+            'website_url' => $website
         );
-
+        $this->db->set('Date', 'NOW()', FALSE);
         return $this->db->insert('webmaster', $data);  
     }
     
@@ -64,6 +64,18 @@ class Wm_model extends CI_Model {
         }else{
             // show erro page
             return false;
+        }
+    }
+    
+    public function get_summary($wmname) {
+        $query = $this->db->get_where('webmaster', array("Name"=>$wmname));
+        if($query->num_rows() > 0)
+        {
+            $row = $query -> row();
+            $summary = array();
+            $summary['mid'] = $row->Mid;
+            $summary['date'] = $row->Date;
+            return $summary;            
         }
     }
 }
