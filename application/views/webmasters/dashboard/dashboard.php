@@ -86,13 +86,23 @@
                                             <thead>
                                                 <tr>
                                                     <th>Date</th>
-                                                    <th>Amount</th>
-                                                    <th>Host</th>
+                                                    <th>Username</th>
                                                     <th>URL</th>
+                                                    <th>Cost</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-
+                                                <?php foreach ($payment_details->result() as $payment_item){
+                                                ?>
+                                                <tr>
+                                                    <th><?php echo $payment_item->Date?></th>
+                                                    <th><?php echo $payment_item->Name?></th>
+                                                    <th><a href="<?php echo $payment_item->Url?>"><?php echo $payment_item->Url?></a></th>
+                                                    <th><?php echo $payment_item->Cost?></th>
+                                                </tr>
+                                                <?php
+                                                }
+                                                ?>
                                             </tbody>
                                         </table>
                                     </div>

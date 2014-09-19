@@ -9,6 +9,7 @@ class Webmasters extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('wm_model');
+        $this->load->library('session');
     }
     
     public function howdy()
@@ -33,9 +34,10 @@ class Webmasters extends CI_Controller {
             $website = $this->input->post('weburl');
             $this->wm_model->set_wm($name,$pwd,$email,$website);
             $wmname = $this->input->post('wmname');
-            session_start();
             //echo $wmname;
-            $_SESSION['wmname'] = $wmname;
+            $session_data = array('wmname' => $wmname);
+            $this->session->set_userdata($session_data);
+            //$_SESSION['wmname'] = $wmname;
             $data['wmname'] = $wmname;
             $this->load->view('templates/viewpal_header');
             $this->load->view('webmasters/welcome',$data); 
@@ -51,8 +53,9 @@ class Webmasters extends CI_Controller {
         if($status == 2)
         {
             //setcookie('vp_username', $username, time()+3600, '/vpaccount', base_url());
-            session_start();
-            $_SESSION['wmname'] = $wmname;
+            //$_SESSION['wmname'] = $wmname;
+            $session_data = array('wmname' => $wmname);
+            $this->session->set_userdata($session_data);
             echo $wmname;
             $dashboard = base_url()."index.php/webmaster/dashboard?wmname=".$wmname;
             header('Location:'.$dashboard);
@@ -65,25 +68,25 @@ class Webmasters extends CI_Controller {
     
     public function logout()
     {
-        session_start();
-        unset($_SESSION['wmname']);
+        $this->session->unset_userdata('wmname');
         header('Location: '.base_url());
     }
     
     public function dashboard()
     {
-        session_start();
+        $wmname = $this->session->userdata('wmname');
         $user_url_input = filter_input(INPUT_GET, 'wmname');
-        if($user_url_input && isset($_SESSION['wmname']))
+        if($user_url_input && isset($wmname))
         {
-            if( $user_url_input == $_SESSION['wmname']){
-                $wmname = $_SESSION['wmname'];
+            if( $user_url_input == $wmname){
+                
                 $mid = $this->wm_model->get_mid($wmname);
                 $data['title'] = "Dashboard | ".$wmname;
                 $data['wmname'] = $wmname;
                 //$data['mid'] = $mid;               
                 $summary = $this->wm_model->get_summary($wmname);
                 $data['summary'] = $summary;
+                $data['payment_details'] = $this->wm_model->get_wm_details($mid);
                 $this->load->view('webmasters/dashboard/header',$data);
                 $this->load->view('webmasters/dashboard/dashboard',$data);
                 $this->load->view('webmasters/dashboard/footer',$data);

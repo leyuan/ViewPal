@@ -95,5 +95,11 @@ class Wm_model extends CI_Model {
         }
         
     }
+    
+    public function get_wm_details($mid)
+    {
+        $sql = "select * from payments where Mid='".$mid."'";
+        return $this->db->query($sql);
+    }
 }
 
