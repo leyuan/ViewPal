@@ -1,17 +1,20 @@
-<?php if(isset($username)){ ?>
+
+<?php if($username != null){ ?>
+    user logged in
     <div class="">
         <h4> Welcome back 
-            <a href="<?php echo base_url()."index.php/user/dashboard?username=".$_SESSION['username'];?>">
-                <?php echo $_SESSION['username'];?>
+            <a href="<?php echo base_url()."index.php/user/dashboard?username=".$username;?>">
+                <?php echo $username;?>
             </a>
             <a href="<?php echo base_url()."index.php/user/logout";?>">(log out?)</a>
         </h4>
     </div>
-<?php } elseif(isset($_SESSION['wmname'])) { ?>
+<?php } elseif($wmname != null) { ?>
+    webmaster logged in
     <div class="">
         <h4> Welcome back WebMaster
-            <a href="<?php echo base_url()."index.php/webmaster/dashboard?wmname=".$_SESSION['wmname'];?>">
-                <?php echo $_SESSION['wmname'];?>
+            <a href="<?php echo base_url()."index.php/webmaster/dashboard?wmname=".$wmname;?>">
+                <?php echo $wmname;?>
             </a>
             <a href="<?php echo base_url()."index.php/webmaster/logout";?>">(log out?)</a>
         </h4>

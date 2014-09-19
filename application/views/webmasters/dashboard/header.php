@@ -80,7 +80,7 @@
     <header id="header" class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container-fluid">
-                <a class="brand" href="dashboard.html"><img src="<?php echo dsasset_path()."images/"?>logo.png" alt="Genyx admin"></a>
+                <a class="brand" href="<?php echo base_url();?>"><img src="<?php echo dsasset_path()."images/"?>logo.png" alt="Genyx admin"></a>
                 <div class="nav-no-collapse">     
                     <ul class="nav pull-right">
                         <li class="divider-vertical"></li>

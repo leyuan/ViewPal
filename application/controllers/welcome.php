@@ -19,19 +19,19 @@ class Welcome extends CI_Controller {
 	 */
     public function __construct() {
         parent::__construct();
-        $this->load->model('users_model');
-        $this->load->model('u_dashboard_model');
         $this->load->library('session');
     }
     
 	public function index()
 	{
         $username = $this->session->userdata('username');
+        $wmname = $this->session->userdata('wmname');
         $data['username'] = $username;
+        $data['wmname'] = $wmname;
         
         
         $this->load->view('templates/viewpal_header');
-		$this->load->view('welcome');
+		$this->load->view('welcome',$data);
         $this->load->view('templates/footer');
 	}
 }

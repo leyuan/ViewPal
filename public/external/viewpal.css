@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic);
+
+body {font-family: 'Source Sans Pro', sans-serif; font-size: 14px; color: #666;}
+
+.news-title {
+    font-size: 30px;
+    color: blue;
+    
+}
+
+.sub-title {
+    color: grey;
+}
+
+.content-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#vp_overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.75);
+}
+
+#vp_container {
+
+}
+
+#vp_signup {
+    width: 60%;
+    height: 72%;
+    position: fixed;
+    top: 14%;
+    bottom: 14%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    text-align: center;
+    z-index: 11;
+}
+
+#vp-login-form {
+    width: 50%;
+    min-height: 70%;
+    position: fixed;
+    top: 15%;
+    margin-left: 25%;
+    background-color: white;
+    z-index: 11;
+}
+
+.vp-form-length {
+    width: 400px;
+}
+
+#vp-form-container {
+    display: block;
+    padding-top: 200px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.vp_intro {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.news-container {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.news-list-title {
+    margin-left: -50px;
+    font-size: 23px;
+}
+
+.container {
+    
+    min-height: 900px;
+}
+
+p {
+    
+}
+
+.news-excerpt {
+    padding-top: 50px;
+    font-size: 18px;
+    
+}
+
+hr {
+    border-width: 4px !important;
+}
+
+.vp_section {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: rgb(108, 196, 92);
+}
+
+.vp_navbar {
+    vertical-align: middle;
+    
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.popupContainer{
+	position:absolute;
+	width:330px;
+	height: auto;
+	left:45%;
+	top:80px;
+	background: #FFF;
+}
+
+#modal_trigger {margin:100px auto; width:100px; display:block;}
+
+
+/* Popup Styles*/
+.popupHeader {font-size:16px; text-transform: uppercase;}
+.popupHeader {background:#F4F4F2; position:relative; padding:10px 20px; border-bottom:1px solid #DDD; font-weight:bold;}
+.popupHeader .modal_close {position: absolute; right: 0; top:0; padding:10px 15px; background:#E4E4E2; cursor: pointer; color:#aaa; font-size:16px;}
+
+.popupBody {padding:20px;}
+
+/* User Login Form */
+.user_login {display: block;}
+.user_login label {display: block; margin-bottom:5px;}
+.user_login input[type="text"], .user_login input[type="email"], .user_login input[type="password"] {display: block; width:90%; padding: 10px; border:1px solid #DDD; color:#666;}
+.user_login input[type="checkbox"] {float:left; margin-right:5px;}
+.user_login input[type="checkbox"]+label {float:left;}
+
+.user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.forgot_password {display:block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color:blue;}
+
+.sample-img {
+    max-width: 1200px;
+}
