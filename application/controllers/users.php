@@ -8,6 +8,7 @@ class Users extends CI_Controller {
         $this->load->model('users_model');
         $this->load->model('u_dashboard_model');
         $this->load->library('session');
+        $this->load->helper('cookie');
         
     }
     
@@ -31,7 +32,9 @@ class Users extends CI_Controller {
                 //set session
                 $newdata = array('username' => $username);
                 $this->session->set_userdata($newdata);
-                //set data
+                //set cookie
+                $cookiedata = array('name' => 'vp_username', 'value' => $username, 'expire' => 3600);
+                set_cookie($cookiedata);
                 $data['username'] = $username;
                 $this->load->view('templates/viewpal_header');
                 $this->load->view('users/newuser_welcome',$data);
@@ -63,13 +66,6 @@ class Users extends CI_Controller {
                 $data['balance'] = $balance;
                 $data['lastdate'] = $lastdate;
                 $data['payment_details'] = $this->u_dashboard_model->get_user_details($username);
-                /*
-                $this->load->view('templates/dashboard_header',$data);
-                $this->load->view('users/dashboard',$data);
-                $this->load->view('templates/footer');
-                 * 
-                 */
-                // Using Admin Template instead of original one
                 $this->load->view('users/dashboard/header', $data);
                 $this->load->view('users/dashboard/dashboard', $data);
                 $this->load->view('users/dashboard/footer');
@@ -92,11 +88,10 @@ class Users extends CI_Controller {
         $status = $this->users_model->login_user();
         if($status == 2)
         {
-            //setcookie('vp_username', $username, time()+3600, '/vpaccount', base_url());
-            //session_start();
-            //$_SESSION['username'] = $username;
             $newdata = array('username' => $username);
             $this->session->set_userdata($newdata);
+            $cookiedata = array('name' => 'vp_username', 'value' => $username, 'expire' => 3600);
+            set_cookie($cookiedata);
             echo $username;
         }
         else
@@ -110,6 +105,8 @@ class Users extends CI_Controller {
         //session_start();
         //unset($_SESSION['username']);
         $this->session->unset_userdata('username');
+        $cookiedata = array('name' => 'vp_username', 'value' => '', 'expire' => 0);
+        delete_cookie($cookiedata);        
         header('Location: '.base_url());
     }
     

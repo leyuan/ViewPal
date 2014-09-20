@@ -10,6 +10,8 @@ class Ajax extends CI_controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('payment_model');
+        $this->load->library('session');
+        $this->load->helper('cookie');
     }
     
     public function checkHistory() {
@@ -31,6 +33,13 @@ class Ajax extends CI_controller {
         $domain = $this->input->post('domain');
         $page_url = $this->input->post('page_url');
         $this->payment_model->set_payment($username,$mid,$pagecost,$domain,$page_url);
+    }
+    
+    public function logout() {
+        $this->session->unset_userdata('username');
+        $cookiedata = array('name' => 'vp_username', 'value' => '', 'expire' => 0);
+        delete_cookie($cookiedata);        
+        echo 1;
     }
 }
 
