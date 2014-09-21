@@ -10,6 +10,7 @@ class Ajax extends CI_controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('payment_model');
+        $this->load->model('users_model');
         $this->load->library('session');
         $this->load->helper('cookie');
     }
@@ -33,6 +34,24 @@ class Ajax extends CI_controller {
         $domain = $this->input->post('domain');
         $page_url = $this->input->post('page_url');
         $this->payment_model->set_payment($username,$mid,$pagecost,$domain,$page_url);
+    }
+    
+    public function login()
+    {   
+        $username = $this->input->post("username");
+        $status = $this->users_model->login_user();
+        if($status == 2)
+        {
+            $newdata = array('username' => $username);
+            $this->session->set_userdata($newdata);
+            $cookiedata = array('name' => 'vp_username', 'value' => $username, 'expire' => 3600);
+            set_cookie($cookiedata);
+            echo $username;
+        }
+        else
+        {
+            echo 0;
+        }
     }
     
     public function logout() {

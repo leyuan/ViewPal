@@ -83,6 +83,7 @@ $route['webmaster/logout'] = 'webmasters/logout';
 $route['ajax/checkhistory'] = 'ajax/checkHistory';
 $route['ajax/checkbalance'] = 'ajax/checkBalance';
 $route['ajax/pay'] = 'ajax/pay';
+$route['ajax/login'] = 'ajax/login';
 $route['ajax/logout'] = 'ajax/logout';
 
 
