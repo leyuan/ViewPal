@@ -91,6 +91,10 @@ $route['ajax/logout'] = 'ajax/logout';
 /*route for tutorial*/
 $route['tutorial/webmaster'] = 'tutorials/webmaster';
 
+
+
+/*Default Route*/
+$route['features'] = "welcome/features";
 $route['default_controller'] = "welcome";
 
 
