@@ -304,7 +304,7 @@ h3 {
 .features-cta-title > h2 {
     margin: 0;
     color: #fff;
-    font-size: 5.0rem;
+    font-size: 3.5em;
     font-weight: 700;
 }
 
@@ -316,7 +316,7 @@ h3 {
 
 .cta-btn {
     padding-top: 12px;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 50px;
     font-weight: 700;
     border-radius: 0.6rem;
@@ -348,6 +348,14 @@ h3 {
 }
 
 .footer-col > a {
+    color: #BBB8B8;
+}
+
+.copyright-container {
+    padding-top: 10px;
+}
+
+.copyright > h5 {
     color: #BBB8B8;
 }
 
@@ -434,7 +442,7 @@ and (max-width: 991px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+        width: 80%;
         font-size: 1.3em;
     }
 }
@@ -477,6 +485,14 @@ and (max-width: 500px) {
 
     .headline-sub-title > h3 {
         font-size: 1.0em;
+    }
+    
+    .cta-btn {
+        min-width: 100%;
+    }
+    
+    .features-cta-title > h2 {
+        font-size: 2.5em;
     }
 }
 
