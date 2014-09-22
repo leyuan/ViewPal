@@ -475,6 +475,23 @@ and (max-width: 715px) {
 }
 
 @media only screen
+and (max-width: 767px) {
+    .footer-col {
+        text-align: center;
+    }
+    
+    .lower-footer {
+        height: 100px;
+    }
+    
+    .copyright-container {
+        padding-top: 30px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media only screen
 and (min-width: 320px)
 and (max-width: 500px) {
     .headline-main-title > h1 {
