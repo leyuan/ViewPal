@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 /* 
     Created on : 12-Aug-2014, 1:55:34 PM
-    Author     : L-admin
+    Author     : Lucius
 */
 html, body {
     height: 100%;
@@ -106,17 +106,45 @@ h3 {
     color: green;
 }
 
-/*******************Css for Static Web Pages***********************/
-/* Nav Menu */
-.logo > a {
-    font-size: 2.5em !important;
+/******************* Global Css for Static Web Pages***********************/
+.icon-bar {
+    height: 3px !important;
+    background-color: #FFFAFA !important;
 }
 
-.features-upper-body {
+.upper-body {
+    display: block;
+    overflow: hidden;
     position: relative;
     min-height: 400px;
-    background-color: #35a8df;
-    background-image: url("./imgs/bg-texture-2.png"),radial-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0));
+    background-image: url("../imgs/bg-texture-2.png"),radial-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0));
+
+}
+
+.body-one {
+    display: block;
+    min-height: 400px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.body-two {
+    display: block;
+    overflow: hidden;
+    min-height: 400px;
+    background-color: #F0F0F0;
+}
+
+.lower-body {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    min-height: 320px;
+}
+
+/*** Nav Menu ***/
+.logo > a {
+    font-size: 2.5em !important;
 }
 
 .navbar {
@@ -129,23 +157,43 @@ h3 {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-left > .active > a {
     background-color: transparent !important;
-    color: #02202f !important;
+    color: #000 !important;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-left > li > a {
     font-weight: 400;
     color: #fff !important;
     font-size: 1.125em !important;
 }
 
-.navbar-default .navbar-nav > li > a:hover{
-    color: #02202f !important;
+.navbar-default .navbar-left > li > a:hover{
+    color: #000 !important;
+}
+
+.nav-btn:hover, 
+.nav-btn:focus {
+    color: #fff !important;
+}
+
+.nav-btn {
+    padding-top: 17px;
+    min-width: 120px;
+    height: 50px;
+    border-radius: 0.6rem;
+    font-size: 16px !important;
+    font-weight: 700 !important;
 }
 
 .navbar-sub-container {
     display: none;
+}
+
+.nav-sub-btn {
+    width: 140px;
+    height: 40px;
+    font-size: 15px !important;
 }
 
 .btn-signup {
@@ -155,26 +203,31 @@ h3 {
 }
 
 .btn-signup:hover {
-
+    color: #fff !important;
     background-color: #044160 !important;    
 }
 
 .btn-login {
-    background-color: transparent !important;
     border: 2px solid #fff;
-
+    color: #fff !important;
+    background-color: transparent !important;
 }
 
-.nav-btn {
-    border-radius: 0.6rem;
-    font-size: .6875rem !important;
-    font-weight: 700 !important;
+.btn-login:hover {
+    opacity: 0.8;
+    background: rgba(255,255,255,0.2) !important;
 }
-/*** End of Nav Menu ***/
 
-/*** Headline ***/
+/************************ end of global css ********************************/
+
+/************************ Css for Features Page ****************************/
+.features-upper-body {
+    min-height: 400px;
+    background-color: #35a8df;
+}
+/*** Css for Headline ***/
 .headline {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -193,12 +246,7 @@ h3 {
     font-weight: 300;
     color: #333;
 }
-
-
-/*** End of Headline ***/
-
-/*** Css for Static Body Section ***/
-/** Body One **/
+/*** Css for Body One ***/
 .features-body-row {
     overflow: hidden;
     margin-top: 5.5em;
@@ -252,14 +300,7 @@ h3 {
 .features-img-hidden {
     display: none;
 }
-/** End of Body One **/
-
-/** Css for Body Two **/
-.features-body-two {
-    min-height: 400px;
-    background-color: #F0F0F0;
-}
-
+/*** Css for Body Two ***/
 .features-body-two-content {
     margin-top: 5.0em;
 }
@@ -290,11 +331,8 @@ h3 {
 .element-intro > p {
     color: #707070;
 }
-/** End of Body Two **/
-
-/** Css for features-lower-body **/
+/*** Css for features-lower-body ***/
 .features-cta {
-    position: relative;
     min-height: 320px;
     background-color: #35a8df;
 }
@@ -326,9 +364,87 @@ h3 {
     border-radius: 0.6rem;
     color: #fff;
 }
-/** End of features-lower-body **/
+/***************************** Css for Pricing Page ***************************/
+.pricing-upper-body {
+    min-height: 400px;
+    background-color: #74A677;
+}
 
-/****** Css for the Footer ******/
+.pricing-body-container {
+    padding-top: 5.0em;
+}
+
+.pricing-body-one {
+    width: 100%;
+}
+
+.pricing-body-one-content {
+    padding-top: 2.0em;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.3em;
+    color: #707070;
+}
+
+.top-space {
+    display: block;
+    padding-top: 30px;
+}
+
+.bot-space {
+    display: block;
+    padding-bottom: 50px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.vp-static-button {
+    padding-top: 10px !important;
+    display: block;
+    width: 400px;
+    height: 45px;
+    text-align: center;
+    color: #74A677;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #74A677;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.vp-pricing-btn {
+    height: 55px !important;
+}
+
+.vp-pricing-btn:hover {
+    opacity: 0.8;
+    background: rgba(91,181,222,0.2) !important;
+}
+
+/*** Pricing Body Two ***/
+.pricing-body-two-title > h4 {
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #707070 !important;
+}
+
+.pricing-body-two-title > h2 {
+    margin-top: 0px;
+    color: #74A677;
+}
+/*** End of Pricing Body Two ***/
+
+.pricing-cta {
+    min-height: 320px;
+    background-color: #74A677;
+}
+/********************************* End of Pricng Page *************************/
+
+/********************************* Css for the Footer *************************/
 .static-footer {
     overflow: hidden;
     background: #404040;
@@ -365,12 +481,7 @@ h3 {
 
 
 
-
-
-
-
-
-/************************ For Media ***********************/
+/******************************** For Media ***********************************/
 @media only screen 
 and (max-width : 1000px) {
     /* Styles */
@@ -391,10 +502,6 @@ and (max-width : 1000px) {
 
     .navbar-default .navbar-nav > li > a {
         font-size: 0.9em;
-    }
-    
-    .nav > li > a {
-        padding: 10px;
     }
 }
 
@@ -479,13 +586,6 @@ and (max-width: 767px) {
     .navbar-right {
         display: none !important;
     }
-    
-    .nav-sub-btn {
-        width: 140px;
-        height: 35px;
-        
-        font-size: 15px !important;
-    }
 }
 
 @media only screen
@@ -539,20 +639,7 @@ and (max-width: 500px) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (portrait and landscape) For Reference ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {

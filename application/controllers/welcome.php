@@ -41,6 +41,13 @@ class Welcome extends CI_Controller {
         $this->load->view('static/features/body');
         $this->load->view('static/footer');
     }
+    
+    public function pricing()
+    {
+        $this->load->view('static/header');
+        $this->load->view('static/pricing/body');
+        $this->load->view('static/footer');
+    }
 }
 
 /* End of file welcome.php */

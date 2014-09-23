@@ -94,6 +94,7 @@ $route['tutorial/webmaster'] = 'tutorials/webmaster';
 
 
 /*Default Route*/
+$route['pricing'] = "welcome/pricing";
 $route['features'] = "welcome/features";
 $route['default_controller'] = "welcome";
 

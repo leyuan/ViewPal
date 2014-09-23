@@ -1,4 +1,5 @@
-<section class="features-upper-body">
+<!-- Features Body Page -->
+<section class="upper-body">
     <div class="features-upper-body">
         <!-- Fixed navbar -->
         <div class="navbar navbar-default" role="navigation">
@@ -17,17 +18,17 @@
                 </span>  
             </div>
 
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Features</a></li>
-                <li><a href="#about">Why ViewPal</a></li>
-                <li><a href="#contact">Pricing</a></li>
-                <li><a href="#contact">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="navbar-collapse collapse ">
+              <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="<?php echo base_url()."index.php/features"?>">Features</a></li>
+                <li><a href="<?php echo base_url()."index.php/whyviewpal"?>">Why ViewPal</a></li>
+                <li><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
+                <li><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
+                <li><a href="#<?php echo base_url()."index.php/contact"?>">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="../navbar/" class="btn nav-btn btn-signup">SIGN UP</a></li>
-                <li><a href="../navbar-static-top/" class="btn nav-btn btn-login">LOG IN</a></li>
+                <li><a href="<?php echo base_url()."index.php/user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
+                <li><a href="<?php echo base_url()."index.php/user/login"?>" class="btn nav-btn btn-login">LOG IN</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -46,8 +47,8 @@
     </div>  
 </section>
 
-<section class="features-main-body">
-    <div class="features-body-one">
+<section class="main-body">
+    <div class="body-one">
         <div class="conatiner features-body-container">
             <div class="features-body-row">
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -111,7 +112,7 @@
             </div>
         </div>
     </div> <!-- End of .features-body-one -->
-    <div class="features-body-two">
+    <div class="body-two">
         <div class="container features-body-container">
             <div class="features-body-two-title">
                 <h3> But wait, there is more ... </h3>
@@ -206,7 +207,7 @@
     </div> <!-- End of .features-body-two-->
 </section>
 
-<section class="features-lower-body">
+<section class="lower-body">
     <div class="features-cta">
         <div class="features-cta-title">
             <h2> Are you ready to use ViewPal </h2>
@@ -217,3 +218,4 @@
         </div>
     </div>
 </section>
+<!-- End of Features Page -->

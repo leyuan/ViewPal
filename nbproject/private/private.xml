@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/git/ViewPal/application/views/templates/dashboard_header.php</file>
             <file>file:/C:/wamp/www/git/ViewPal/application/views/static/header.php</file>
             <file>file:/C:/wamp/www/git/ViewPal/application/views/static/footer.php</file>
             <file>file:/C:/wamp/www/git/ViewPal/public/css/viewpal.css</file>
+            <file>file:/C:/wamp/www/git/ViewPal/application/views/static/pricing/body.php</file>
             <file>file:/C:/wamp/www/git/ViewPal/application/controllers/welcome.php</file>
             <file>file:/C:/wamp/www/git/ViewPal/application/views/users/dashboard/header.php</file>
             <file>file:/C:/wamp/www/git/ViewPal/application/config/routes.php</file>
-            <file>file:/C:/wamp/www/git/ViewPal/public/css/bootstrap.css</file>
-            <file>file:/C:/wamp/www/git/ViewPal/public/js/bootstrap.js</file>
             <file>file:/C:/wamp/www/git/ViewPal/application/views/static/features/body.php</file>
         </group>
     </open-files>
