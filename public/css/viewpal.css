@@ -144,6 +144,10 @@ h3 {
     color: #02202f !important;
 }
 
+.navbar-sub-container {
+    display: none;
+}
+
 .btn-signup {
     margin-right: 20px !important;
     background-color: #000 !important;
@@ -460,6 +464,27 @@ and (max-width : 767px) {
     .nav-container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+@media only screen
+and (min-width: 588px)
+and (max-width: 767px) {
+    .navbar-sub-container {
+        display: block;
+        position: absolute;
+        right: 100px;
+    }
+
+    .navbar-right {
+        display: none !important;
+    }
+    
+    .nav-sub-btn {
+        width: 140px;
+        height: 35px;
+        
+        font-size: 15px !important;
     }
 }
 

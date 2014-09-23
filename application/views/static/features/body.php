@@ -11,7 +11,12 @@
                 <span class="icon-bar"></span>
               </button>
                 <span class="logo"><a class="navbar-brand" href="#">ViewPal</a></span>
+                <span class="nav navbar-nav navbar-sub-container">
+                    <a href="../navbar/" class="btn nav-btn nav-btn btn-signup nav-sub-btn">SIGN UP</a>
+                    <a href="../navbar-static-top/" class="btn nav-btn btn-login nav-sub-btn">LOG IN</a>
+                </span>  
             </div>
+
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Features</a></li>
