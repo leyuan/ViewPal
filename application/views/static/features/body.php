@@ -1,6 +1,6 @@
 <!-- Features Body Page -->
 <section class="upper-body">
-    <div class="features-upper-body">
+    <div class="features-upper-body upper-body">
         <!-- Fixed navbar -->
         <div class="navbar navbar-default" role="navigation">
           <div class="container nav-container">

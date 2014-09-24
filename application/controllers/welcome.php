@@ -48,6 +48,13 @@ class Welcome extends CI_Controller {
         $this->load->view('static/pricing/body');
         $this->load->view('static/footer');
     }
+    
+    public function whyviewpal()
+    {
+        $this->load->view('static/header');
+        $this->load->view('static/whyviewpal/body');
+        $this->load->view('static/footer');
+    }
 }
 
 /* End of file welcome.php */

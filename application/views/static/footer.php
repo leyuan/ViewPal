@@ -1,6 +1,6 @@
         <footer>
             <div class='static-footer'>
-                <div class="container">
+                <div class="container footer-container">
                     <div class='upper-footer'>
                         <div class="footer-col col-xs-12 col-sm-3 col-md-3 col-lg-3 text-left">
                             <h4>About ViewPal</h4>
