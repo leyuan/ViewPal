@@ -38,21 +38,28 @@ class Welcome extends CI_Controller {
     public function features()
     {
         $this->load->view('static/header');
-        $this->load->view('static/features/body');
+        $this->load->view('static/body/features');
         $this->load->view('static/footer');
     }
     
     public function pricing()
     {
         $this->load->view('static/header');
-        $this->load->view('static/pricing/body');
+        $this->load->view('static/body/pricing');
         $this->load->view('static/footer');
     }
     
     public function whyviewpal()
     {
         $this->load->view('static/header');
-        $this->load->view('static/whyviewpal/body');
+        $this->load->view('static/body/whyviewpal');
+        $this->load->view('static/footer');
+    }
+    
+    public function hiring()
+    {
+        $this->load->view('static/header');
+        $this->load->view('static/body/hiring');
         $this->load->view('static/footer');
     }
 }

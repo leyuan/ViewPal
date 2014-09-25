@@ -66,6 +66,7 @@
                             Google Analytics then you already know how to use ViewPal. You’ll be up and running in no time! Told 
                             you it was easy. 
                         </p>
+                        <button class="btn features-btn">LET ME SEE HOW IT WORKS</button>
                     </div>
                 </div>               
             </div>
@@ -85,6 +86,7 @@
                             away happy knowing they didn’t overpay. Ad dollars keep rolling in and your revenue just exploded. 
                             Impress your friends and the executive team with the results, and become a hero in the office! 
                         </p>
+                        <button class="btn features-btn">I WANNA KNOW ALL ABOUT IT</button>
                     </div>
                 </div>
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-block">
@@ -105,8 +107,8 @@
                             We know your audience doesn’t want to mess around making accounts and uploading money. They 
                             have one account that works for all websites using ViewPal. They create an account in seconds without 
                             leaving your site. We accept all major credit cards, PayPal, and bitcoin too. Keeping things painless.
-
                         </p>
+                        <button class="btn features-btn">SHOW ME HOW IT IS</button>
                     </div>
                 </div>               
             </div>

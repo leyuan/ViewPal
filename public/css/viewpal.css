@@ -254,7 +254,8 @@ h3 {
 /*** Css for Body One ***/
 .features-body-row {
     overflow: hidden;
-    margin-top: 5.5em;
+    margin-top: 80px;
+    margin-bottom: 80px;
     background-color: #fff;
 }
 
@@ -304,6 +305,23 @@ h3 {
 
 .features-img-hidden {
     display: none;
+}
+
+.features-btn {
+    min-width: 320px;
+    height: 60px;
+    font-weight: 700;
+    color: #35a8df;
+    background-color: transparent;
+    border: solid 2px;
+    border-color: #35a8df;
+    border-radius: 5px;
+}
+
+.features-btn:hover {
+    color: #35a8df;
+    opacity: 0.8;
+    background: rgba(91,181,222,0.2) !important;;
 }
 /*** Css for Body Two ***/
 .features-body-two-content {
@@ -557,8 +575,53 @@ h3 {
 .copyright > h5 {
     color: #BBB8B8;
 }
+/******************************** Css for Hiring ******************************/
+.hiring-upper-body {
+    min-height: 400px;
+    background-color: #82c8bd;  
+}
 
+.hiring-cta {
+    min-height: 320px;
+    background-color: #82c8bd;
+}
 
+.hiring-body-container {
+    margin-top: 50px;
+}
+
+.hiring-body-one-title > h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #333;
+}
+
+.hiring-body-one-content {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 604px;
+    background-image: url("../imgs/vp-whywork.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hiring-img-container {
+    display:block;
+    position: absolute;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6%;
+}
+
+#content-slider {
+    
+}
 
 /******************************** For Media ***********************************/
 @media only screen 
@@ -622,10 +685,6 @@ and (max-width: 991px) {
     
     .features-img-block {
         display: none;
-    }
-    
-    .features-body-row {
-        margin-top: 40px;
     }
     
     .features-body-content > p {

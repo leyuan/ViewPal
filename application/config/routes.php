@@ -94,6 +94,7 @@ $route['tutorial/webmaster'] = 'tutorials/webmaster';
 
 
 /*Default Route*/
+$route['hiring'] = "welcome/hiring";
 $route['whyviewpal'] = "welcome/whyviewpal";
 $route['pricing'] = "welcome/pricing";
 $route['features'] = "welcome/features";
