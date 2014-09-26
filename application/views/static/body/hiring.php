@@ -57,7 +57,7 @@
                 <ul id="content-slider" class="list-unstyled clearfix cSdemo cS-hidden" >
                     <li>
                         <div class="center">
-                            <h3>Reason One</h3>
+                            <h3>#1</h3>
                             <div class="features">
                                 <p> Sentence one </p>
                                 <p> Sentence two </p>
@@ -67,7 +67,7 @@
                     </li>
                     <li>
                         <div class="center">
-                            <h3>Reason Two</h3>
+                            <h3>#2</h3>
                             <div class="features">
                                 <p> Sentence One </p>
                                 <p> Sentence Two </p>
@@ -77,7 +77,7 @@
                     </li>
                     <li>
                         <div class="center">
-                            <h3>Reason Three</h3>
+                            <h3>#3</h3>
                             <div class="features">
                                 <p> Sentence One </p>
                                 <p> Sentence Two </p>
@@ -86,18 +86,85 @@
                         <span class="h100"></span>
                     </li>                    
                 </ul>
-                <button class="btn hiring-btn" id="hiring-btn">SHOW ME ANOTHER REASON</button>
+                <button class="hiring-btn" id="hiring-btn">SHOW ME ANOTHER REASON</button>
             </div>
         </div>
     </div><!-- End of .pricng-body-one -->
     <div class="body-two">
-        <div class="container pricing-body-container">
-            <div class="pricing-body-two-title">
-                <h4> NOT SURE YET? </h4>
-                <h2> ViewPal's Frequently Asked Questions </h2>
+        <div class="container hiring-body-container">
+            <div class="hiring-body-two-title text-center">
+                <h4> SOUNDS PRETTY GOOD, RIGHT? </h4>
+                <h2> SO JOIN US </h2>
+            </div>
+            <div class="hiring-body-two-content text-center">
+                <p>
+                    ViewPal is a fast-growing company with amazing employees who do outstanding work.
+                    Our mission is to redefine the relationship between content providers and their readers.
+                    Join us as we reshape the publication technology landscape.
+                </p>
+                <a class="btn hiring-btn hiring-apply-btn" id="applybtn" onclick="applynow()"> Opening Positions </a>
             </div>
         </div>
-    </div> <!-- End of .features-body-two-->
+    </div> <!-- End of .hiring-body-two-->
+    
+    <div class="body-one body-three">
+        <div class="container hiring-body-container">
+            <div class="body-three-title" id='applynow'>
+                <h2 class="text-center">Current openings</h2>
+                <span class="hiring-position">
+                    <h4>ViewPal is actively seeking for the following positions:</h4>
+                    <ul class="position-list">
+                        <li class="filled"><strike>Software Developement Intern</strike> - filled!</li>
+                        <li class="available">Graphic Designer</li>
+                        <li class="filled"><strike>Blogger/Editor</strike> - filled!</li>
+                        <li class="filled"><strike>Front End Developer</strike> - filled!</li>
+                        <li class="available">Senior PHP Developer</li>
+                    </ul>
+                    <h5>Haven't found the perfect position for you? Don't worry, drop your resume here!</h5>
+                    
+                    <span class='hiring-form'>
+                        <h3 class='hiring-h3'>Personal Information:</h3>
+                        <form role="form">
+                            <div class='form-group'>
+                                <input type="text" class="form-control hiring-personal" id="hiring-name" placeholder="Name *">
+                            </div>
+                            <div class='form-group'>
+                                <input type="text" class="form-control hiring-personal" id="hiring-email" placeholder="Email *">
+                            </div>
+                            <div class='form-group'>
+                                <input type="text" class="form-control hiring-personal" id="hiring-phone" placeholder="Phone">
+                            </div>
+                            <h3 class='hiring-h3'>Professional Information:</h3>
+                            <div class='form-group'>
+                               <textarea rows="10" cols="50" class='hiring-personal hiring-textarea' placeholder="Cover Letter"></textarea>
+                            </div>
+                            <div class='form-group'>
+                                <input type="text" class="form-control hiring-personal" id="hiring-url" placeholder="Portfolio URL (if applicable)">
+                            </div>
+                            <div class="form-group">
+                              <input type="file" id="resume-upload" class='btn hiring-btn hidden'>
+                              <input type='button' class='btn hiring-btn resume-btn' value='Resume: Choose File to Upload' onclick='upload()'>
+                            </div>
+                            <button type="submit" class="btn hiring-btn hiring-submit-btn">Apply Now</button>
+                        </form>
+                    </span>
+                </span>
+            </div>
+            <!--
+            <div class="body-three-content">
+                <div class="open-position">
+                    <div class="position-container">
+                        <p>Software Developement Intern</p>
+                        <div class="glyphicon glyphicon-plus hiring-glyph"></div>                 
+                        <div class="work-detail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+            
+        </div>
+    </div>
 </section>
 
 <section class="lower-body">

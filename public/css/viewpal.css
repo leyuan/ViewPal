@@ -620,7 +620,191 @@ h3 {
 }
 
 #content-slider {
+    margin-top: 70px;
+    font-size: 2.1em;
+    color: #82c8bd;
+    font-weight: 700;
+}
+
+.center > h3 {
+    font-size: 2.1em;
+    color: #fff;
+}
+
+.hiring-btn {
+    margin-top: 100px;
+    height: 70px;
+    color: #35a8df;
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #82c8bd;
+}
+
+.hiring-btn:hover {
+    color: #35a8df;
+    opacity: 0.8;
+    background: rgba(91,181,222,0.2) !important;    
+}
+
+.hiring-body-container {
+    display: block;
+    overflow: hidden;
+    min-height: 400px;
+    padding-bottom: 60px;
+}
+
+.hiring-body-two-title > h4 {
+    color: #404040;
+    font-weight: bold;
+    font-size: 2.4em;
+}
+
+.hiring-body-two-title > h2 {
+    color: #82c8bd;
+    font-weight: 900;
+    font-size: 3.0em;
+}
+
+.hiring-body-two-content {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.hiring-body-two-content > p {
+    font-size: 1.5em;
+}
+
+.hiring-apply-btn {
+    margin-top: 50px;
+    padding-top: 23px;
+    min-width: 200px;    
+}
+/*** hiring-body-three ***/
+.body-three-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.body-three-title > h2 {
+    font-size: 3.4em;
+    font-weight: 700; 
+    color: #404040;
+}
+
+.open-position {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #82c8bd;
+    cursor: pointer;
+}
+
+.position-container > p {
+    display: inline-block;
+    padding-top: 13px;
+    padding-left: 30px;
+    font-size: 1.6em;
+}
+
+.hiring-glyph {
+    display: inline-block;
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.open-position:hover {
+    color: #35a8df;
+    opacity: 0.8;
+    background: rgba(91,181,222,0.2) !important;       
+}
+
+.hiring-position {
+    display: block;
+    margin-top: 50px;
+}
+
+.hiring-position > h4 {
+    font-size: 1.7em;
+}
+
+.hiring-position > h5 {
+    padding-top: 20px;
+    font-size: 1.3em;
+    color: #444;
+}
+
+.hiring-position > ul > li {
+    font-size: 1.6em;
+    color: #707070;
+}
+
+.position-list {
+    padding-top:23px;
     
+}
+
+.position-list > li {
+    padding-top: 8px;
+}
+
+.filled {
+    color: #707070;
+}
+
+.hiring-form {
+    display: block;
+    padding-top: 40px;
+}
+
+.hiring-h3 {
+    font-size: 1.5em;
+    color: #82c8bd;
+}
+
+.available {
+    color: #35a8df !important;
+}
+
+.hiring-personal {
+    padding-top: 15px;
+}
+
+.hiring-personal {
+    padding-top: 8px;
+    padding-left: 30px;
+    width: 80%;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+.hiring-textarea {
+    height: 200px;
+    font-size: 1.3em;
+}
+
+.resume-btn {
+    margin-top: 0px;
+    width: 80%;
+    font-size: 1.2em;
+}
+
+.hiring-submit-btn {
+    margin-top: 0px;
+    width: 50%;  
+    font-size: 1.2em;
 }
 
 /******************************** For Media ***********************************/

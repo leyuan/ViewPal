@@ -37,7 +37,19 @@
                 $('#hiring-btn').click(function(){
                     slider.goToNextSlide();
                 });
+                
+                $("#applybtn").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#applynow").offset().top
+                    }, 1000);
+                });
             });
+        
+            function upload(){
+                document.getElementById("resume-upload").click();
+            }
+            
+
         </script>
    </head>
    
