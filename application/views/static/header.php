@@ -43,6 +43,10 @@
                         scrollTop: $("#applynow").offset().top
                     }, 1000);
                 });
+                
+                $( "#blog-btn1" ).click(function() {
+                    $( "#blog-readmore1" ).toggle( "slow" );
+                });
             });
         
             function upload(){

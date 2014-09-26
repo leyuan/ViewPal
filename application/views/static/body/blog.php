@@ -63,9 +63,21 @@
                 <div class="blog-content center">
                     <p>
                         Fifteen years ago, I was sitting in the middle of what was then the next big thing in legal.
-                        It was the age of “merger mania” and I was working at a venerable old law firm that was about to become part of a new and “improved” law firm. Yes,...
-                    </p>              
-                    <button class="btn blog-readmore-btn center"> READ MORE </button>
+                        It was the age of “merger mania” and I was working at a venerable old law firm that was about to become part of a new and “improved” law firm. 
+                        Yes it was BIG. But what I saw and experienced yesterday was BIGGER. And better.
+                    </p>
+                    <span class="blog-full-content" id="blog-readmore1" style="display:none;">
+                        <p>
+                            Day One of the Clio Cloud Conference was essentially about three things: Innovating, Growing, and Leading. The energy was off the hook. And we expect that to continue today as we enter Day Two.
+                            If I may be allowed to quote myself (thanks to Neil Shankman, Clio’s new VP, Marketing, for taking my cheesy little remark and making it part of his opening address—which was tweeted back to me within seconds—thank you, forward-thinking lawyers), “we’ve emerged from the fog and into the cloud”. Clio is a major part of that and we want to be driving that progression. But actually, YOU are driving that.
+                        </p>
+                        <p>
+                            What did we learn yesterday? I asked a few people on the conference floor. And thanks to the support of lawyers like you, as well as Clio staffers and conference partners, there was more to Day One than just dancing and tweeting.
+                            Lots more!
+                        </p>
+                    </span>
+                    <button class="btn blog-readmore-btn center" id="blog-btn1"> READ MORE </button>
+
                 </div>
             </div>
         </div>
