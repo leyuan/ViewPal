@@ -24,7 +24,7 @@
                 <li><a href="<?php echo base_url()."index.php/whyviewpal"?>">Why ViewPal</a></li>
                 <li><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
                 <li><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
-                <li><a href="#<?php echo base_url()."index.php/contact"?>">Contact</a></li>
+                <li><a href="<?php echo base_url()."index.php/contact"?>">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo base_url()."index.php/user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>

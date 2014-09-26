@@ -24,7 +24,7 @@
                 <li><a href="<?php echo base_url()."index.php/whyviewpal"?>">Why ViewPal</a></li>
                 <li class="active"><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
                 <li><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
-                <li><a href="#<?php echo base_url()."index.php/contact"?>">Contact</a></li>
+                <li><a href="<?php echo base_url()."index.php/contact"?>">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo base_url()."index.php/user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
@@ -73,6 +73,58 @@
                 <h4> NOT SURE YET? </h4>
                 <h2> ViewPal's Frequently Asked Questions </h2>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="pricing-faq">
+                    <ul>
+                        <li><h3>How does the risk free trial work?</h3></li>
+                    </ul>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="pricing-faq">
+                    <ul>
+                        <li><h3>Is ViewPal Secure?</h3></li>
+                    </ul>
+                    <p>
+                        
+                    </p>
+                </div> 
+                <div class="pricing-faq">
+                    <ul>
+                        <li><h3>What types of payments can my customers use?</h3></li>
+                    </ul>
+                    <p>
+                        
+                    </p>
+                </div>                 
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="pricing-faq">
+                    <ul>
+                        <li><h3>What happens after the end of my trial?</h3></li>
+                    </ul>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="pricing-faq">
+                    <ul>
+                        <li><h3>What types of payments can my customers use?</h3></li>
+                    </ul>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="pricing-faq">
+                    <ul>
+                        <li><h3>What hours is your tech support available?</h3></li>
+                    </ul>
+                    <p>
+                        
+                    </p>
+                </div>                 
+            </div>            
         </div>
     </div> <!-- End of .features-body-two-->
 </section>
