@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Lucius
 */
 html, body {
-    height: 100%;
+    min-height: 100%;
 }
 
 html, body, button {
@@ -286,7 +286,7 @@ body, html {
 }
 
 .home-text-container > h1 {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .home-body {
@@ -317,10 +317,24 @@ body, html {
     background-color: #008ad3;    
 }
 
+.home-happy-girl {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    bottom: 0;
+    float: right;
+    width: 35%;
+}
+
+.happygirl-img-home {
+    height: 100%;
+}
+
 .home-img-container {
     width: 75%;
-    margin-top: -10%;
-    margin-left: -5%;
+    margin-top: -14%;
+    margin-left: 0;
 }
 
 .graph-img-home {

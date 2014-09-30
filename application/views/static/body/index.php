@@ -22,33 +22,36 @@
    
    <body>
        <div class="home-container">
-           <div class="home-section home-navbar">
-               <span class="nav-left">
-                   <img src="<?php echo public_url()."imgs/logo.png"?>" class="img-logo">
-               </span>
-               <span class="nav-right">
-                   <button class="btn home-signin">Sign In</button>
-               </span>
-           </div>
-           <div class="home-section home-body">
-               <div class="home-text-container">
-                   <h1>Google Analytics tells you what’s happening.</h1>
-                   <h1 class="viewpal-blue">KISSmetrics tells you who’s doing it.</h1>
-                   <span class="home-body-btn">
-                        <button class="btn home-btn btn-home-try">Try ViewPal Risk Free</button>
-                        <button class="btn home-btn btn-home-tour">Take a Tour</button>
-                   </span>
-               </div>
-                <div class="home-img-container">
-                    <img src="<?php echo public_url()."imgs/home-graph.png"?>" class="graph-img-home">
-               </div>
-               <div class="home-body-footer">
-                   
-               </div>
-           </div>
+            <div class="home-section home-navbar">
+                <span class="nav-left">
+                    <img src="<?php echo public_url()."imgs/logo.png"?>" class="img-logo">
+                </span>
+                <span class="nav-right">
+                    <button class="btn home-signin">Sign In</button>
+                </span>
+            </div>
+            <div class="home-section home-body">
+                <div class="home-text-container">
+                    <h1>Google Analytics tells you what’s happening.</h1>
+                    <h1 class="viewpal-blue">KISSmetrics tells you who’s doing it.</h1>
+                    <span class="home-body-btn">
+                         <button class="btn home-btn btn-home-try">Try ViewPal Risk Free</button>
+                         <button class="btn home-btn btn-home-tour">Take a Tour</button>
+                    </span>
+                </div>
+                <div class="home-happy-girl">
+                    <img src="<?php echo public_url()."imgs/happy_man.png";?>" class="happygirl-img-home">
+                </div>
+                 <div class="home-img-container">
+                     <img src="<?php echo public_url()."imgs/home-graph.png"?>" class="graph-img-home">
+                </div>
+                <div class="home-body-footer">
+
+                </div>
+            </div>
        </div>
         <div class="home-section home-footer">
-               
+            <h1> footer here </h1>
         </div>
    </body>
 </html>
