@@ -24,16 +24,19 @@ class Welcome extends CI_Controller {
     
 	public function index()
 	{
+        $this->load->view('static/body/index');
+	}
+    
+    public function login()
+    {
         $username = $this->session->userdata('username');
         $wmname = $this->session->userdata('wmname');
         $data['username'] = $username;
         $data['wmname'] = $wmname;
-        
-        
         $this->load->view('templates/viewpal_header');
 		$this->load->view('welcome',$data);
-        $this->load->view('templates/footer');
-	}
+        $this->load->view('templates/footer');        
+    }
     
     public function features()
     {

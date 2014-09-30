@@ -72,8 +72,46 @@
                 </div>                
             </div>
         </div>
-        <div class="whyviewpal-img-container">
-            
+        <div class="whyviewpal-img-container"></div>
+        <div class="container test-container">
+            <div class="test-title">
+                <h3>CLIENTS TESTIMONIALS</h3>
+                <h2>How Lander helps Businesses grow</h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <div class="test-img"><img src="<?php echo public_url()."imgs/test1.png"?>"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <span class="test-text">
+                        <h3>Using Lander to grow my agency</h3>
+                        <p style="padding-top: 30px;">
+                            “Lander claims to be a landing page software, but it's been much more than that to my agency.
+                            Whether we need a one-page for our new free ebook, or a client's product, 
+                            running some a/b testing and optimizing for mobiles along the way, 
+                            or a temporary sign up page for a webinar, Lander covers it all. 
+                            I’ve increased conversion rate on my landing pages from 19% to 43% thanks to A/B testing and It takes us around 3 hours total to set up a simple page for a client's upcoming online event.”
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3">
+                    <span class="test-img"><img src="<?php echo public_url()."imgs/test1.png"?>"></span>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <span class="test-text">
+                        <h3>Using Lander to grow my agency</h3>
+                        <p style="padding-top: 30px;">
+                            “Lander claims to be a landing page software, but it's been much more than that to my agency.
+                            Whether we need a one-page for our new free ebook, or a client's product, 
+                            running some a/b testing and optimizing for mobiles along the way, 
+                            or a temporary sign up page for a webinar, Lander covers it all. 
+                            I’ve increased conversion rate on my landing pages from 19% to 43% thanks to A/B testing and It takes us around 3 hours total to set up a simple page for a client's upcoming online event.”
+                        </p>
+                    </span>
+                </div>
+            </div>
         </div>
     </div><!-- End of .pricng-body-one -->
     <div class="body-two">
