@@ -1,4 +1,3 @@
-
 <?php if($username != null){ ?>
     user logged in
     <div class="">

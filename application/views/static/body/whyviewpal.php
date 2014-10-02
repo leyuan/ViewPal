@@ -51,10 +51,10 @@
     <div class="body-one">
         <div class="container whyviewpal-body-container">
             <div class="whyviewpal-body-one-row">
-                <div class="whyviewpal-body-one-element col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                    <img src="<?php echo public_url()."imgs/sample1.png"?>" class="whyviewpal-body-img float-right">                   
+                <div class="whyviewpal-body-one-element col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <img src="<?php echo public_url()."imgs/whyviewpal.png"?>" class="whyviewpal-body-img float-right">                   
                 </div>
-                <div class="whyviewpal-body-one-element col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <div class="whyviewpal-body-one-element col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="whyviewpal-body-one-title">
                         <h3>NOT SURE YET?</h3>
                         <h2>Learn why ViewPal is the best payment platform</h2>
@@ -76,38 +76,35 @@
         <div class="container test-container">
             <div class="test-title">
                 <h3>CLIENTS TESTIMONIALS</h3>
-                <h2>How Lander helps Businesses grow</h2>
+                <h2>How ViewPal helps Businesses grow</h2>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <div class="test-img"><img src="<?php echo public_url()."imgs/test1.png"?>"></div>
+                    <div class="test-img"><img src="<?php echo public_url()."imgs/test1.jpg"?>"></div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                     <span class="test-text">
                         <h3>Using Lander to grow my agency</h3>
                         <p style="padding-top: 30px;">
-                            “Lander claims to be a landing page software, but it's been much more than that to my agency.
-                            Whether we need a one-page for our new free ebook, or a client's product, 
-                            running some a/b testing and optimizing for mobiles along the way, 
-                            or a temporary sign up page for a webinar, Lander covers it all. 
-                            I’ve increased conversion rate on my landing pages from 19% to 43% thanks to A/B testing and It takes us around 3 hours total to set up a simple page for a client's upcoming online event.”
+                            We liked how easy it was to set-up ViewPal. Their dashboard made it easy to 
+                            experiment and find pricing that works for us. There is next to no maintenance 
+                            and everything is really polished. ViewPal is definitely the best option available.
                         </p>
                     </span>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3">
-                    <span class="test-img"><img src="<?php echo public_url()."imgs/test1.png"?>"></span>
+                    <span class="test-img"><img src="<?php echo public_url()."imgs/test2.jpg"?>"></span>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                     <span class="test-text">
                         <h3>Using Lander to grow my agency</h3>
                         <p style="padding-top: 30px;">
-                            “Lander claims to be a landing page software, but it's been much more than that to my agency.
-                            Whether we need a one-page for our new free ebook, or a client's product, 
-                            running some a/b testing and optimizing for mobiles along the way, 
-                            or a temporary sign up page for a webinar, Lander covers it all. 
-                            I’ve increased conversion rate on my landing pages from 19% to 43% thanks to A/B testing and It takes us around 3 hours total to set up a simple page for a client's upcoming online event.”
+                            I am amazed how well their micropayment approach works. We had been considering putting 
+                            up a paywall for years, but were always afraid that our users would leave. ViewPal is easy 
+                            and it works really well. I can’t imagine going back to just ads. There is no doubt in my mind 
+                            that ViewPal is the future of the web.
                         </p>
                     </span>
                 </div>
@@ -150,7 +147,7 @@
         </div>
         <div class="features-cta-btn-row">
             <a href="../navbar/" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
-            <a href="../navbar-static-top/" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
+            <a href="<?php echo base_url()."index.php/pricing"?>" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
         </div>
     </div>
 </section>

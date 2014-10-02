@@ -53,19 +53,21 @@
         <div class="conatiner features-body-container">
             <div class="features-body-row">
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <img src="<?php echo public_url()."imgs/sample1.png"?>" class="features-body-img float-right">
+                    <img src="<?php echo public_url()."imgs/feature_one.png"?>" class="features-body-img float-right" style="padding-top: 80px;">
                 </div>
                  <div class="features-body-text-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="features-body-subtitle">
-                        <h3>1-2-3, YOUR WEBSITE IS READY TO MAKE MONEY</h3>
-                        <h2>Easy Integration</h2>
+                        <h3>JOIN THE MICROPAYMENT REVOLUTION</h3>
+                        <h2>A New Kind of Payment Experience</h2>
                     </div>
                     <div class="features-body-content">
                         <p>
-                            Got no time for messy integration? We take the worries out of launching your paywall. Just sign up for a 
-                            business account and drag and drop some code into your website. If you have already worked with 
-                            Google Analytics then you already know how to use ViewPal. You’ll be up and running in no time! Told 
-                            you it was easy. 
+                        Paywalls haven’t evolved in way too long. Tired of putting in countless hours
+                        for minimal return? With ViewPal, your audience pays for what they view. 
+                        Loyal customers subscribe, and everyone else walks away happy knowing they 
+                        didn’t overpay. Ad dollars keep rolling in and your revenue just exploded. 
+                        Impress your friends and the executive team with the results. 
+                        Become a hero in the office! 
                         </p>
                         <button class="btn features-btn">LET ME SEE HOW IT WORKS</button>
                     </div>
@@ -73,41 +75,44 @@
             </div>
             <div class="features-body-row">
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-hidden">
-                    <img src="<?php echo public_url()."imgs/sample1.png"?>" class="features-body-img">
+                    <img src="<?php echo public_url()."imgs/feature_two.png"?>" class="features-body-img">
                 </div>
                 <div class="features-body-text-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="features-body-subtitle text-right">
-                        <h3 class="">JOIN THE MICROPAYMENT REVOLUTION </h3>
-                        <h2 class="">A New Kind of Payment Experience</h2>
+                        <h3 class="">CREATING GREAT CONTENT IS HARD<br>SELLING IT SHOULDN’T BE</h3>
+                        <h2 class="">Turnkey Solution</h2>
                     </div>
                     <div class="features-body-content text-right float-right">
                         <p>
-                            Paywalls haven’t evolved in way too long. Tired of putting in countless hours for minimal return? With
-                            ViewPal, your audience pays for what they view. Loyal customers subscribe, and everyone else walks 
-                            away happy knowing they didn’t overpay. Ad dollars keep rolling in and your revenue just exploded. 
-                            Impress your friends and the executive team with the results, and become a hero in the office! 
+                            Got no time for messy integration? Not sure how to process payments or protect customer data?
+                            We take the worries out of launching your paywall. Just sign up for a business account
+                            and drag and drop some code into your website. If you have worked with Google Analytics then 
+                            you already know how to use ViewPal. You’ll be up and running in no time! Told you it was easy.       
                         </p>
                         <button class="btn features-btn">I WANNA KNOW ALL ABOUT IT</button>
                     </div>
                 </div>
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-block">
-                    <img src="<?php echo public_url()."imgs/sample1.png"?>" class="features-body-img">
+                    <img src="<?php echo public_url()."imgs/feature_two.png"?>" class="features-body-img">
                 </div>
             </div>
             <div class="features-body-row">
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <img src="<?php echo public_url()."imgs/sample1.png"?>" class="features-body-img float-right">
+                    <img src="<?php echo public_url()."imgs/feature_three.png"?>" class="features-body-img float-right">
                 </div>
                  <div class="features-body-text-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="features-body-subtitle">
-                        <h3>ONE ACCOUNT </h3>
-                        <h2>Low Friction </h2>
+                        <h3>FLEXIBILITY TO SUIT YOUR UNIQUE BUSINESS NEEDS</h3>
+                        <h2>Easy Customization</h2>
                     </div>
                     <div class="features-body-content">
                         <p>
-                            We know your audience doesn’t want to mess around making accounts and uploading money. They 
-                            have one account that works for all websites using ViewPal. They create an account in seconds without 
-                            leaving your site. We accept all major credit cards, PayPal, and bitcoin too. Keeping things painless.
+                            Customize your pricing strategy from our user-friendly dashboard. 
+                            Set price points, number of free articles, split pay system, virality 
+                            and more.  ViewPal works great for all different types of publishers and 
+                            content providers. Whether you are a big-time publisher with millions or 
+                            readers, an aspiring artist with a loyal following, a digital content 
+                            producer, or somewhere in between, we have a solution that works for you.
                         </p>
                         <button class="btn features-btn">SHOW ME HOW IT IS</button>
                     </div>
@@ -119,13 +124,13 @@
         <div class="container features-body-container">
             <div class="features-body-two-title">
                 <h3> But wait, there is more ... </h3>
-                <h2> Empower your website thanks to these amazing features </h2>
+                <h2>Empower your website with these amazing features</h2>
             </div>
             <div class="features-body-two-content">
                 <div class="features-body-two-row">
                     <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div>
-                            <img src="<?php echo public_url()."imgs/sample2.png"?>">
+                            <img src="<?php echo public_url()."imgs/feature1.png"?>">
                         </div>
                         <div>
                             <div>
@@ -142,39 +147,7 @@
                     </div>
                     <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div>
-                            <img src="<?php echo public_url()."imgs/sample2.png"?>">
-                        </div>
-                        <div>
-                            <div>
-                                <h3> Customizable Dashboard </h3>
-                            </div>
-                            <div class="element-intro font-small">
-                                <p>
-                                    Easily adjust your prices, metering, and more to optimize your payment strategy. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div>
-                            <img src="<?php echo public_url()."imgs/sample2.png"?>">
-                        </div>
-                        <div>
-                            <div>
-                                <h3> Mobile Access  </h3>
-                            </div>
-                            <div class="element-intro font-small">
-                                <p>
-                                    ViewPal works beautifully across all devices, so your customers can view your content on the go. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="features-body-two-row">
-                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div>
-                            <img src="<?php echo public_url()."imgs/sample2.png"?>">
+                            <img src="<?php echo public_url()."imgs/feature2.png"?>">
                         </div>
                         <div>
                             <div>
@@ -182,20 +155,38 @@
                             </div>
                             <div class="element-intro font-small">
                                 <p>
-                                    We use industry leading SSL encryption and conduct daily security audits to ensure your data and your 
-                                    customer’s data is secure and immune to third party monitoring. We work with certified 3rd party 
-                                    payment processing companies to ensure financial transactions are secure.                                 
+                                    We use industry leading SSL encryption and conduct daily security audits to ensure your data 
+                                    and your customer’s data is secure and immune to third party monitoring. We work with certified
+                                    3rd party payment processing companies to ensure financial transactions are secure.
                                 </p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div>
-                            <img src="<?php echo public_url()."imgs/sample2.png"?>">
+                            <img src="<?php echo public_url()."imgs/feature3.png"?>">
                         </div>
                         <div>
                             <div>
-                                <h3> Pay Wall </h3>
+                                <h3> One Account  </h3>
+                            </div>
+                            <div class="element-intro font-small">
+                                <p>
+                                    Your audience has one account that works for all websites using ViewPal. They create an account in seconds without leaving your site. 
+                                    We accept all major credit cards, PayPal, and bitcoin too. Less friction translates to more sign-ups.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Body 2 row 1 -->
+                <div class="features-body-two-row">
+                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <img src="<?php echo public_url()."imgs/feature4.png"?>">
+                        </div>
+                        <div>
+                            <div>
+                                <h3> Mobile Access </h3>
                             </div>
                             <div class="element-intro font-small">
                                 <p>
@@ -203,8 +194,86 @@
                                 </p>
                             </div>
                         </div>
+                    </div> 
+                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <img src="<?php echo public_url()."imgs/feature5.png"?>">
+                        </div>
+                        <div>
+                            <div>
+                                <h3> Easy Integration </h3>
+                            </div>
+                            <div class="element-intro font-small">
+                                <p>
+                                    Copy some code into your website and decide on what monetization strategy.
+                                    We provide suggestions and tutorials, and our technical service team is always available. 
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <img src="<?php echo public_url()."imgs/feature6.png"?>">
+                        </div>
+                        <div>
+                            <div>
+                                <h3> Split Pay </h3>
+                            </div>
+                            <div class="element-intro font-small">
+                                <p>
+                                    Automatically credit the accounts of contributors and partners based on rules you create. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div> <!--Body 2 Row 2-->
+                <div class="features-body-two-row">
+                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <img src="<?php echo public_url()."imgs/feature7.png"?>">
+                        </div>
+                        <div>
+                            <div>
+                                <h3> Customer Service </h3>
+                            </div>
+                            <div class="element-intro font-small">
+                                <p>
+                                    We handle support for your customers so you don’t have to.
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <img src="<?php echo public_url()."imgs/feature8.png"?>">
+                        </div>
+                        <div>
+                            <div>
+                                <h3> Metered Previews </h3>
+                            </div>
+                            <div class="element-intro font-small">
+                                <p>
+                                    Introduce new users to your content by setting a number of free views.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div>
+                            <img src="<?php echo public_url()."imgs/feature9.png"?>">
+                        </div>
+                        <div>
+                            <div>
+                                <h3> Branding </h3>
+                            </div>
+                            <div class="element-intro font-small">
+                                <p>
+                                    Upload your logo to have it appear in the subscription prompt.  
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div> <!--Body 2 Row 3-->
             </div>
         </div>
     </div> <!-- End of .features-body-two-->
@@ -217,7 +286,7 @@
         </div>
         <div class="features-cta-btn-row">
             <a href="../navbar/" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
-            <a href="../navbar-static-top/" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
+            <a href="<?php echo base_url()."index.php/whyviewpal"?>" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
         </div>
     </div>
 </section>

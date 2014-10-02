@@ -27,7 +27,7 @@
                     <img src="<?php echo public_url()."imgs/logo.png"?>" class="img-logo">
                 </span>
                 <span class="nav-right">
-                    <button class="btn home-signin">Sign In</button>
+                    <a href="<?php echo base_url()."index.php/signin"?>" class="btn home-signin">Sign In</a>
                 </span>
             </div>
             <div class="home-section home-body">
@@ -35,8 +35,8 @@
                     <h1>You create quality content</h1>
                     <h1 class="viewpal-blue">Viewpal helps you monetize it</h1>
                     <span class="home-body-btn">
-                         <button class="btn home-btn btn-home-try">Try ViewPal Risk Free</button>
-                         <button class="btn home-btn btn-home-tour">Take a Tour</button>
+                         <a href="<?php echo base_url()."index.php/user/signup"?>" class="btn home-btn btn-home-try">Try ViewPal Risk Free</a>
+                         <a href="<?php echo base_url()."index.php/features"?>" class="btn home-btn btn-home-tour">Take a Tour</a>
                     </span>
                 </div>
                 <div class="home-happy-girl">
@@ -44,9 +44,6 @@
                 </div>
                  <div class="home-img-container">
                      <img src="<?php echo public_url()."imgs/home-graph.png"?>" class="graph-img-home">
-                </div>
-                <div class="home-body-footer">
-
                 </div>
             </div>
        </div>

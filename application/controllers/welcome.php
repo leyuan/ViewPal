@@ -27,7 +27,7 @@ class Welcome extends CI_Controller {
         $this->load->view('static/body/index');
 	}
     
-    public function login()
+    public function signin()
     {
         $username = $this->session->userdata('username');
         $wmname = $this->session->userdata('wmname');
