@@ -197,7 +197,9 @@ h3 {
 }
 
 .btn-signup {
-    margin-right: 20px !important;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: #000 !important;
     color: #fff !important;
 }
@@ -208,6 +210,9 @@ h3 {
 }
 
 .btn-login {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border: 2px solid #fff;
     color: #fff !important;
     background-color: transparent !important;
@@ -221,6 +226,10 @@ h3 {
 .nav-hiring {
     font-size: 1.6em !important;
     color: red !important;
+}
+
+.navbar-collapse {
+    max-height: 400px;
 }
 
 /************************ end of global css ********************************/
@@ -567,6 +576,7 @@ body, html {
 }
 
 .whyviewpal-body-container {
+    margin-top: 40px;
     margin-bottom: 50px;
 }
 
@@ -593,16 +603,19 @@ body, html {
     margin-bottom: 0px;
     color: #df5c65;
     font-weight: 700;
+    padding-left: 30px;
 }
 
 .whyviewpal-body-one-title > h2 {
     margin-top: 0px;
     color: #333;
+    padding-left: 30px;
 }
 
 .whyviewpal-body-one-content {
     margin-top:10px;
     padding-top: 40px;
+    padding-left: 30px;
 }
 
 .whyviewpal-body-one-content > p {
@@ -1290,9 +1303,6 @@ and (max-width: 991px) {
 @media only screen
 and (min-width: 401px)
 and (max-width: 800px) {
-    .btn-signup {
-        margin-right: 0px !important;
-    }
     
     .home-text-container {
         width: 100%;
@@ -1376,7 +1386,7 @@ and (max-width: 576px) {
 and (min-width: 220px)
 and (max-width: 500px) {
     .headline-main-title > h1 {
-        font-size: 3.8em;
+        font-size: 3.5em;
         font-weight: 700;
         color: #fff;
     }

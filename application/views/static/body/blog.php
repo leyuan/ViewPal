@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <span class="logo"><a class="navbar-brand" href="#">ViewPal</a></span>
+                <span class="logo"><a class="navbar-brand" href="<?php echo base_url();?>">ViewPal</a></span>
                 <span class="nav navbar-nav navbar-sub-container">
                     <a href="../navbar/" class="btn nav-btn nav-btn btn-signup nav-sub-btn">SIGN UP</a>
                     <a href="../navbar-static-top/" class="btn nav-btn btn-login nav-sub-btn">LOG IN</a>
@@ -25,6 +25,7 @@
                 <li><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
                 <li class="active"><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
                 <li><a href="<?php echo base_url()."index.php/contact"?>">Contact</a></li>
+                <li><a href="<?php echo base_url()."index.php/hiring"?>" class="nav-hiring">Career</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo base_url()."index.php/user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
