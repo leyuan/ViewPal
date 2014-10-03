@@ -7,8 +7,90 @@ and open the template in the editor.
     Created on : 12-Aug-2014, 1:55:34 PM
     Author     : Lucius
 */
+/* Fonts */
+@font-face {
+    font-family: proxima-thin;
+    src: url(../fonts/ProximaNova-Light.otf);
+}
+
+/* begin fadein animation */
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+/* end fadein animation */
+
+/* begin fadeout animation */
+
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+/* end fadeout */
+
+/************* Import Fonts Here ***************************/
+
+
 html, body {
     min-height: 100%;
+    font-family: proxima-thin;
 }
 
 html, body, button {
@@ -250,9 +332,8 @@ body, html {
 }
 
 .home-navbar {
-    height: 80px;
-    background-color: #F7F7F7;
-    border-bottom: 1px solid #eee;
+    height: 140px;
+    background-color: transparent;
 }
 
 .nav-left {
@@ -263,16 +344,16 @@ body, html {
 .nav-right {
     float: right;
     padding-right: 4%;
-    width: 160px;
+    width: 300px;
 }
 
 .img-logo {
-    padding-top: 10px;
+    padding-top: 20px;
     height: 60px;
 }
 
 .home-signin {
-    margin-top: 25px;
+    margin-top: 20px;
     width: 90px;
     height: 36px;
     font-size: 16px;
@@ -282,13 +363,30 @@ body, html {
     border: 2px solid #008ad3;
 }
 
+.home-hiring {
+    position: relative;
+    top: 15px;
+    right: 15%;
+    padding-top: 30px;
+}
+
+.a-home-hiring {
+    margin-top: 20px;
+    width: 150px;
+    height: 36px;
+    font-size: 16px;
+    color: rgb(248, 58, 76);
+    background-color: transparent;
+    border-radius: 6px;
+}
+
 .home-signin:hover {
     color: #fff;
     background-color: #008ad3;
 }
 
 .home-text-container {
-    padding-top: 2%;
+    position: relative;
     padding-left: 3%;
     width: 75%;
     height: 50%;
@@ -296,7 +394,9 @@ body, html {
 }
 
 .home-text-container > h1 {
-    font-size: 30px;
+    font-family: proxima-thin;
+    margin-top: 0px;
+    font-size: 42px;
 }
 
 .home-body {
@@ -310,15 +410,16 @@ body, html {
 .home-body-btn {
     position: relative;
     display: block;
-    margin-top: 40px;
-    overflow: hidden;
+    margin-top: 30px;
     z-index: 1;
 }
 
 .home-btn {
-    padding-top: 10px;
+    padding: 0px;
     width: 200px;
-    height: 40px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
     color: #008ad3;
     background-color: transparent;
     border-radius: 6px;
@@ -409,11 +510,11 @@ body, html {
 .headline {
     margin-top: 40px;
     text-align: center;
-    -webkit-transition: opacity 1s ease;
-    -webkit-transition-delay: 0;    
-    transition: opacity 1s ease 0;
-    opacity: 1;
-    transition: all 0.5s;
+    opacity: 0;
+    -moz-animation: fadein 2s forwards; /* Firefox */
+    -webkit-animation: fadein 2s forwards; /* Safari and Chrome */
+    -o-animation: fadein 2s forwards; /* Opera */
+    animation: fadein 2s forwards;
 }
 
 .headline > h1 {
@@ -523,6 +624,7 @@ body, html {
 }
 
 .features-body-two-element {
+    padding-top: 20px;
     text-align: -webkit-center;
 }
 
@@ -681,7 +783,6 @@ body, html {
 .test-text {
     font-size: 19px;
     font-style: italic;
-    font-family: sans-serif;
 }
 
 .test-text > h3 {

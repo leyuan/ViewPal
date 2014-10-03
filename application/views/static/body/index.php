@@ -26,7 +26,10 @@
                 <span class="nav-left">
                     <img src="<?php echo public_url()."imgs/logo.png"?>" class="img-logo">
                 </span>
-                <span class="nav-right">
+                <span class="nav-right text-right">
+                    <span class='home-hiring'>
+                        <a href="<?php echo base_url()."index.php/hiring"?>" class="a-home-hiring"><u>We're Hiring</u></a>
+                    </span>
                     <a href="<?php echo base_url()."index.php/signin"?>" class="btn home-signin">Sign In</a>
                 </span>
             </div>
@@ -54,7 +57,7 @@
                 <li><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
                 <li><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
                 <li><a href="<?php echo base_url()."index.php/contact"?>">Contact</a></li>
-                <li><a href="<?php echo base_url()."index.php/career"?>">Career</a></li>
+                <li><a href="<?php echo base_url()."index.php/hiring"?>">Career</a></li>
             </ul>
             <h4>© 2014 ViewPal · All rights reserved · Privacy Policy · Terms of Use</h4>
         </div>
