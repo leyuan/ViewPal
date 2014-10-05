@@ -58,36 +58,36 @@
                 <ul id="content-slider" class="list-unstyled clearfix cSdemo cS-hidden" >
                     <li>
                         <div class="center">
-                            <h3>#1</h3>
+                            <h3>Our Mission</h3>
                             <div class="features">
-                                <p> Sentence one </p>
-                                <p> Sentence two </p>
+                                <p> We are bringing the next-level </p>
+                                <p> web monetization method. </p>
                             </div>
                         </div>
                         <span class="h100"></span>
                     </li>
                     <li>
                         <div class="center">
-                            <h3>#2</h3>
+                            <h3>Your Dream</h3>
                             <div class="features">
-                                <p> Sentence One </p>
-                                <p> Sentence Two </p>
+                                <p> You are not working for anyone </p>
+                                <p> but your dream </p>
                             </div>
                         </div>
                         <span class="h100"></span>
                     </li>
                     <li>
                         <div class="center">
-                            <h3>#3</h3>
+                            <h3>The Life</h3>
                             <div class="features">
-                                <p> Sentence One </p>
-                                <p> Sentence Two </p>
+                                <p> Full benefits, good pay  </p>
+                                <p> talented people and a cute dog </p>
                             </div>
                         </div>
                         <span class="h100"></span>
                     </li>                    
                 </ul>
-                <button class="hiring-btn" id="hiring-btn">SHOW ME ANOTHER REASON</button>
+                <button class="hiring-btn" id="hiring-btn">SHOW ME <br> ANOTHER REASON</button>
             </div>
         </div>
     </div><!-- End of .pricng-body-one -->

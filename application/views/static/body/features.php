@@ -74,7 +74,7 @@
                 </div>               
             </div>
             <div class="features-body-row">
-                <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-hidden">
+                <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-hidden" >
                     <img src="<?php echo public_url()."imgs/feature_two.png"?>" class="features-body-img">
                 </div>
                 <div class="features-body-text-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -92,12 +92,12 @@
                         <button class="btn features-btn">I WANNA KNOW ALL ABOUT IT</button>
                     </div>
                 </div>
-                <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-block">
+                <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-block" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
                     <img src="<?php echo public_url()."imgs/feature_two.png"?>" class="features-body-img">
                 </div>
             </div>
             <div class="features-body-row">
-                <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
                     <img src="<?php echo public_url()."imgs/feature_three.png"?>" class="features-body-img float-right">
                 </div>
                  <div class="features-body-text-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -126,7 +126,7 @@
                 <h3> But wait, there is more ... </h3>
                 <h2>Empower your website with these amazing features</h2>
             </div>
-            <div class="features-body-two-content">
+            <div class="features-body-two-content text-center">
                 <div class="features-body-two-row">
                     <div class="features-body-two-element col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div>

@@ -80,7 +80,7 @@
                 <h2>How ViewPal helps Businesses grow</h2>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" data-uk-scrollspy="{cls:'uk-animation-fade'}">
                     <div class="test-img"><img src="<?php echo public_url()."imgs/test1.jpg"?>"></div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3">
+                <div class="col-xs-12 col-sm-2 col-md-3 col-lg-3" data-uk-scrollspy="{cls:'uk-animation-fade'}">
                     <span class="test-img"><img src="<?php echo public_url()."imgs/test2.jpg"?>"></span>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
@@ -118,23 +118,23 @@
                 <h2> People that trust ViewPal </h2>
             </div>
             <div class="whyviewpal-body-two-content">
-                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-                    <img src="<?php echo public_url()."imgs/sample2.png"?>">  
+                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
+                    <img src="<?php echo public_url()."imgs/t1.png"?>" class="whyviewpal-trust">  
                 </span>
-                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-                    <img src="<?php echo public_url()."imgs/sample2.png"?>">  
+                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
+                    <img src="<?php echo public_url()."imgs/t2.png"?>" class="whyviewpal-trust">  
                 </span>
-                 <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-                    <img src="<?php echo public_url()."imgs/sample2.png"?>">  
+                 <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container"> 
+                    <img src="<?php echo public_url()."imgs/t3.png"?>" class="whyviewpal-trust">  
                 </span>
-                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-                    <img src="<?php echo public_url()."imgs/sample2.png"?>">  
+                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
+                    <img src="<?php echo public_url()."imgs/t4.png"?>" class="whyviewpal-trust">  
                 </span>
-                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-                    <img src="<?php echo public_url()."imgs/sample2.png"?>">  
+                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
+                    <img src="<?php echo public_url()."imgs/t5.png"?>" class="whyviewpal-trust">  
                 </span>
-                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-                    <img src="<?php echo public_url()."imgs/sample2.png"?>">  
+                <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
+                    <img src="<?php echo public_url()."imgs/t6.png"?>" class="whyviewpal-trust">  
                 </span>           
             </div>
         </div>

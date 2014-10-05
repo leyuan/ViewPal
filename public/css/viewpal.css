@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 /* Fonts */
 @font-face {
-    font-family: proxima-thin;
+    font-family: "proxima-thin";
     src: url(../fonts/ProximaNova-Light.otf);
 }
 
@@ -350,6 +350,12 @@ body, html {
 .img-logo {
     padding-top: 20px;
     height: 60px;
+    opacity: 0;
+    -moz-animation: fadein 2s forwards; /* Firefox */
+    -webkit-animation: fadein 2s forwards; /* Safari and Chrome */
+    -o-animation: fadein 2s forwards; /* Opera */
+    animation: fadein 2s forwards;
+
 }
 
 .home-signin {
@@ -469,6 +475,9 @@ body, html {
     position: relative;
     width: 100%;
     z-index: -1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .home-body-footer {
@@ -732,7 +741,6 @@ body, html {
 
 .whyviewpal-img-container {
     display: block;
-    overflow: hidden;
     min-width: 100%;
     min-height: 240px;
     background-image: url("../imgs/timeline.png");
@@ -748,6 +756,15 @@ body, html {
     overflow: hidden;
     margin-top: 60px;
     padding-bottom: 30px;
+}
+
+.trust-img-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+}
+
+.whyviewpal-trust {
 }
 
 .test-title {
@@ -926,6 +943,7 @@ body, html {
 #content-slider {
     margin-top: 70px;
     font-size: 2.1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #82c8bd;
     font-weight: 700;
 }
@@ -938,12 +956,13 @@ body, html {
 .hiring-btn {
     margin-top: 100px;
     height: 70px;
-    color: #35a8df;
+    color: white;
     font-weight: 700;
     background-color: transparent;
     border: 2px solid;
     border-radius: 10px;
-    border-color: #82c8bd;
+    border-color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hiring-btn:hover {
@@ -984,6 +1003,8 @@ body, html {
 }
 
 .hiring-apply-btn {
+    color: #82c8bd;
+    border-color: #82c8bd;
     margin-top: 50px;
     padding-top: 23px;
     min-width: 200px;    

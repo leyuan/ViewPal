@@ -43,10 +43,10 @@
                     </span>
                 </div>
                 <div class="home-happy-girl">
-                    <img src="<?php echo public_url()."imgs/happy_girl.png";?>" class="happygirl-img-home">
+                    <img src="<?php echo public_url()."imgs/happy_girl.png";?>" class="happygirl-img-home" data-uk-scrollspy="{cls:'uk-animation-slide-bottom'}">
                 </div>
                  <div class="home-img-container">
-                     <img src="<?php echo public_url()."imgs/home-graph.png"?>" class="graph-img-home">
+                     <img src="<?php echo public_url()."imgs/home-graph.png"?>" class="graph-img-home" unselectable="on">
                 </div>
             </div>
        </div>

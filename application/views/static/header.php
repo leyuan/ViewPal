@@ -10,6 +10,7 @@
         <title>ViewPal features: The best way to monetize your website</title>
         
         <!-- Core Stylesheets -->
+        <link type="text/css" rel="stylesheet" href="<?php echo public_url()."css/uikit.min.css"?>"/>
         <link type="text/css" rel="stylesheet" href="<?php echo public_url()."css/bootstrap.css"?>"/>
         <link type="text/css" rel="stylesheet" href="<?php echo public_url()."css/viewpal.css"?>"/>
         <link type="text/css" rel="stylesheet" href="<?php echo public_url()."lightSlider/css/lightSlider.css"?>"/>
@@ -18,6 +19,8 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="<?php echo public_url()."js/bootstrap.js"?>"></script>
         <script src="<?php echo public_url()."lightSlider/js/jquery.lightSlider.js"?>"></script>
+        <script src="<?php echo public_url()."js/uikit.min.js"?>"></script>
+        
         <script type="text/javascript">
             $(document).ready(function() {
                 var slider = $('#content-slider').lightSlider({
