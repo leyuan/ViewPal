@@ -79,6 +79,13 @@ class Welcome extends CI_Controller {
         $this->load->view('static/body/blog');
         $this->load->view('static/footer');
     }
+    
+    public function faq()
+    {
+        $this->load->view('static/header');
+        $this->load->view('static/body/faq');
+        $this->load->view('static/footer');
+    }
 }
 
 /* End of file welcome.php */

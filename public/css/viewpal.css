@@ -224,7 +224,19 @@ h3 {
 }
 
 /*** Nav Menu ***/
+.logo {
+    display: block;
+    overflow: hidden;
+    width: 150px;
+    height: 50px;
+}
+
+.logo > a > img {
+    width: 80%;
+}
+
 .logo > a {
+    padding-top: 9px;
     font-size: 2.5em !important;
 }
 
@@ -553,6 +565,12 @@ body, html {
     overflow: hidden;
 }
 
+#feature-one-details, #feature-two-details, #feature-three-details {
+    overflow: hidden;
+    display: none;
+    width: 75%;    
+}
+
 .features-body-img-container {
 }
 
@@ -586,6 +604,7 @@ body, html {
 .features-body-content {
     width: 90%;
     color: #707070;
+    margin-bottom: 30px;
 }
 
 .features-body-content > p {
@@ -744,6 +763,8 @@ body, html {
     min-width: 100%;
     min-height: 240px;
     background-image: url("../imgs/timeline.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /*** WhyViewPal Body Two ***/
@@ -844,16 +865,16 @@ body, html {
 }
 
 .vp-static-button {
-    padding-top: 10px !important;
     display: block;
     width: 400px;
     height: 45px;
+    font-size: 14px;
+    font-weight: 700;
     text-align: center;
     color: #74A677;
     border: solid 1px;
     border-radius: 5px;
     border-color: #74A677;
-    font-weight: 500;
     background-color: transparent;
 }
 
@@ -1205,6 +1226,12 @@ body, html {
     padding-bottom: 40px;    
 }
 
+.blog-img-container {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
 .blog-readmore-btn {
     width: 200px;
     height: 60px;
@@ -1231,6 +1258,7 @@ body, html {
     display: block;
     overflow: hidden;
     padding-bottom: 60px;
+    width: 60%;
 }
 
 .contact-form > h3 {
@@ -1288,6 +1316,33 @@ body, html {
 .contact-cta {
     min-height: 320px;
     background-color: #a88fcf;   
+}
+
+/******************************** For FAQ *************************************/
+.faq-upper-body {
+    min-height: 400px;
+    background-color: #929393;
+}
+
+.faq-cta {
+    min-height: 320px;
+    background-color: #929393;
+}
+
+.faq-nav-item {
+    display: block;   
+}
+
+.faq-general {
+    
+}
+
+.faq-selling {
+    display: none;
+}
+
+.faq-paid {
+    display: none;
 }
 
 /********************************* Css for the Footer *************************/
@@ -1348,6 +1403,7 @@ body, html {
 .copyright > h5 {
     color: #BBB8B8;
 }
+
 
 /******************************** For Media ***********************************/
 @media only screen 
@@ -1450,6 +1506,7 @@ and (max-width: 767px) {
     .navbar-sub-container {
         display: block;
         position: absolute;
+        top: 36px;
         right: 100px;
     }
 

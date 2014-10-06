@@ -94,6 +94,7 @@ $route['tutorial/webmaster'] = 'tutorials/webmaster';
 
 
 /*Default Route*/
+$route['faq'] = "welcome/faq";
 $route['signin'] = "welcome/signin";
 $route['blog'] = "welcome/blog";
 $route['contact'] = "welcome/contact";

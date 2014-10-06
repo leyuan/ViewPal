@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <span class="logo"><a class="navbar-brand" href="<?php echo base_url();?>">ViewPal</a></span>
+                <span class="logo text-right"><a class="navbar-brand" href="<?php echo base_url();?>"><img src="<?php echo public_url()."imgs/logo_white.png"?>" class="nav-logo"></a></span>
                 <span class="nav navbar-nav navbar-sub-container">
                     <a href="../navbar/" class="btn nav-btn nav-btn btn-signup nav-sub-btn">SIGN UP</a>
                     <a href="../navbar-static-top/" class="btn nav-btn btn-login nav-sub-btn">LOG IN</a>
@@ -69,10 +69,22 @@
                         Impress your friends and the executive team with the results. 
                         Become a hero in the office! 
                         </p>
-                        <button class="btn features-btn">LET ME SEE HOW IT WORKS</button>
+                        <button id="btn-one-features" class="btn features-btn">LET ME SEE HOW IT WORKS</button>
                     </div>
-                </div>               
+                </div>      
+                <div id="feature-one-details" class="center text-left features-body-content">
+                    <P>
+                        The key to micropayments is execution. With ViewPal, we focus on creating a low-friction way for people to upload money to their account. To accomplish this, we work with various APIs and companies to leverage places people already have their credit card entered. For example, iTunes, Google, PayPal and more. We also enable people to pay using their mobile devices. The bill is simply added onto their monthly phone bill. 
+                    </P>
+                    <p>
+                        The second important thing for micropayments to work is the messaging. We have worked hard to find the perfect ways of asking people to open their wallets. For example, when people are asked to support the writers who create a blog, versus simply hit with a paywall, the differences in conversion is significant. When you sign up, we ask that you specify the type of content that you provide. In this way, our software can determine the best messaging based on similar content providers. Our customer service department works with each and every client to ensure a perfect fit between messaging and your unique company’s personality. 
+                    </p>
+                    <p>
+                        The third key to success revolves around price point. Charging too much scares your audience off, but charging too little fails to maximize revenue. We provide suggested price points based on what is working on similar websites, but ultimately the decision on price is up to you, and you are free to make adjustments from your online dashboard.
+                    </p>
+                </div>
             </div>
+            <!--  Feature Two -->
             <div class="features-body-row">
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-hidden" >
                     <img src="<?php echo public_url()."imgs/feature_two.png"?>" class="features-body-img">
@@ -89,18 +101,29 @@
                             and drag and drop some code into your website. If you have worked with Google Analytics then 
                             you already know how to use ViewPal. You’ll be up and running in no time! Told you it was easy.       
                         </p>
-                        <button class="btn features-btn">I WANNA KNOW ALL ABOUT IT</button>
+                        <button id="btn-two-features" class="btn features-btn">I WANNA KNOW ALL ABOUT IT</button>
                     </div>
                 </div>
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6 features-img-block" data-uk-scrollspy="{cls:'uk-animation-slide-right'}">
                     <img src="<?php echo public_url()."imgs/feature_two.png"?>" class="features-body-img">
                 </div>
+                <div id="feature-two-details" class="center text-left features-body-content">
+                    <P>
+                        It can be intimidating at first to consider charging for content. Our job is to make this process as easy and simple as possible. We look after customer service, keeping your audience happy is our top priority. We take care of all the coding so that ViewPal is integrated into your website seamlessly. Managing data is all done by us, but at the end of the day, you own your customer’s information. Unlike other companies which lock you in by holding onto customer data, we choose the higher road. If you want to switch to another content monetization provider, we will export all account information.                     </P>
+                    <p>
+                        Analytics software is built into your online dashboard, so you can see exactly what is going on. You can see at a glance which articles are people viewing most, the products people are downloading, or just information about your audience such as their age distribution and where in the world they typically live. Security is our top priority and sensitive information such as credit cards is carefully guarded by working with certified 3rd party payment gateways. Software for optimization is built into the dashboard, so you can run tests at different price points or with different metering. Plus, we apply our machine learning algorithms across all the websites who use ViewPal so that we can provide suggestions based on what is working for similar content on other websites. Your own personal data aggregation and actionable insights machine to help you maximize user conversions! 
+                    </p>
+                    <p>
+                        For payments, we accept all major credit cards, can process payments via PayPal, iTunes accounts, Google Play accounts, or simply add the cost to your audience’s monthly phone bill. We also provide ways for you to engage your audience. Thanks to ViewPal, upselling and cross-selling just got easier. You can send them specialized messages based on their behavior. Have they purchased product X? Ask them if they have heard about product Y. 
+                    </p>
+                </div>
             </div>
+            <!-- End of .feature-two row -->
             <div class="features-body-row">
                 <div class="features-body-img-container col-xs-12 col-sm-12 col-md-6 col-lg-6" data-uk-scrollspy="{cls:'uk-animation-slide-left'}">
                     <img src="<?php echo public_url()."imgs/feature_three.png"?>" class="features-body-img float-right">
                 </div>
-                 <div class="features-body-text-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="features-body-text-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="features-body-subtitle">
                         <h3>FLEXIBILITY TO SUIT YOUR UNIQUE BUSINESS NEEDS</h3>
                         <h2>Easy Customization</h2>
@@ -114,9 +137,18 @@
                             readers, an aspiring artist with a loyal following, a digital content 
                             producer, or somewhere in between, we have a solution that works for you.
                         </p>
-                        <button class="btn features-btn">SHOW ME HOW IT IS</button>
+                        <button id="btn-three-features" class="btn features-btn">SHOW ME HOW IT IS</button>
                     </div>
-                </div>               
+                </div>
+                <div id="feature-three-details" class="center text-left features-body-content">
+                    <P>
+                        We value keeping things as simple as possible, but we also value keeping you in the driver’s seat. After all, who knows your business better than you? With ViewPal, you have the flexibility to set parameters like metering, the number of free content that your audience can view before being charged, or split pay, the tracking of which articles belong to who, and distributing revenue accordingly. We also enable virality by empowering social sharing. With the click of a button you can allow people who visit your website from social media to not be charged for that article. In this way people writing about your business will not be deterred from liking your website or particular posts. 
+                    <p>
+                        The types of content that ViewPal works well for is very broad. We work with blogs, emagazines, newspapers, videos, ebooks, music, and more. Whether you are a small-time blogger, a producer of digital content, an up-and-coming musician, making instructional videos or ebooks, or something else, we have the combination of messaging, price point, and analytics to keep you covered.                    </p>
+                    <p>
+                        With ViewPal, we have chosen to promote ourselves as a brand. This ensures users recognize our company across multiple websites and are greeted by a familiar experience. To fit with your website, we ask that you upload a copy of your logo for the payment screen. When users are faced with paying, they are redirected to our payment gateway, but without feeling like they left your website.
+                    </p>
+                </div>
             </div>
         </div>
     </div> <!-- End of .features-body-one -->

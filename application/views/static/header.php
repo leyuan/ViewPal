@@ -47,9 +47,23 @@
                     }, 1000);
                 });
                 
+                $("#btn-one-features").click(function(){
+                   $("#feature-one-details").toggle("slow"); 
+                });
+                
+                $("#btn-two-features").click(function(){
+                   $("#feature-two-details").toggle("slow"); 
+                });
+                
+                $("#btn-three-features").click(function(){
+                   $("#feature-three-details").toggle("slow"); 
+                });   
+                
                 $( "#blog-btn1" ).click(function() {
                     $( "#blog-readmore1" ).toggle( "slow" );
                 });
+                
+                
             });
         
             function upload(){

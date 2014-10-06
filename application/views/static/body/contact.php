@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <span class="logo"><a class="navbar-brand" href="<?php echo base_url();?>">ViewPal</a></span>
+                <span class="logo text-right"><a class="navbar-brand" href="<?php echo base_url();?>"><img src="<?php echo public_url()."imgs/logo_white.png"?>" class="nav-logo"></a></span>
                 <span class="nav navbar-nav navbar-sub-container">
                     <a href="../navbar/" class="btn nav-btn nav-btn btn-signup nav-sub-btn">SIGN UP</a>
                     <a href="../navbar-static-top/" class="btn nav-btn btn-login nav-sub-btn">LOG IN</a>
@@ -51,7 +51,7 @@
 <section class="main-body">
     <div class="body-one">
         <div class="container pricing-body-container">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 contact-form">
+            <div class="center text-center contact-form">
                 <h3> Reach out to us!</h3>
                 <p> Got a question about Lander? Are you interested in partnering with us? Have some suggestions or just want to say hi? Contact us: </p>
                 <form role="form">
@@ -71,10 +71,6 @@
                         <button type="submit" class="btn contact-btn contact-submit-btn">Submit</button>
                     </span>
                 </form>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 contact-form">
-                <h3>Customer care</h3>
-                <p>Not sure where to start? Need help adding that extra mojo to your landing page? Just visit our help center or get in touch with us:</p>
             </div>
         </div>
     </div><!-- End of .pricng-body-one -->

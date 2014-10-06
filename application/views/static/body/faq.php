@@ -1,6 +1,6 @@
 <!-- Pricing Body Page -->
 <section class="upper-body">
-    <div class="pricing-upper-body upper-body">
+    <div class="faq-upper-body upper-body">
         <!-- Fixed navbar -->
         <div class="navbar navbar-default" role="navigation">
           <div class="container nav-container">
@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <span class="logo text-right"><a class="navbar-brand" href="<?php echo base_url();?>"><img src="<?php echo public_url()."imgs/logo_white.png"?>" class="nav-logo"></a></span>
+                <span class="logo"><a class="navbar-brand" href="<?php echo base_url();?>">ViewPal</a></span>
                 <span class="nav navbar-nav navbar-sub-container">
                     <a href="../navbar/" class="btn nav-btn nav-btn btn-signup nav-sub-btn">SIGN UP</a>
                     <a href="../navbar-static-top/" class="btn nav-btn btn-login nav-sub-btn">LOG IN</a>
@@ -38,7 +38,7 @@
         <div class="headline">
             <div class="container">
                 <div class="headline-main-title">
-                    <h1>PRICING</h1>
+                    <h1>FAQ</h1>
                 </div>
                 <div class="headline-sub-title">
                     <h3>Risk Free Trial. Simple Pricing.</h3>
@@ -50,31 +50,33 @@
 
 <section class="main-body">
     <div class="body-one">
-        <div class="container pricing-body-container">
-            <div class="pricing-body-one-title text-center">
-                <h3>AS CLOSE TO FREE AS IT GETS</h3>
-                <h2>No Commitments, No Surprises</h2>
+        <div class="container faq-body-container">
+            <div class="col-md-2">
+                <a href="#" class="faq-nav-item" data-section="general">General</a>
+                <a href="#" class="faq-nav-item" data-section="selling">Selling Content</a>
+                <a href="#" class="faq-nav-item" data-section="paid">Getting Paid</a>
             </div>
-            <div class="pricing-body-one-content text-center">
-                <p>
-                    Pay one clear rate for every transaction. 
-                    Sell $100 online, see $90.00 deposited into your bank account.
-                    We support all major credit cards, PayPal, and even Bitcoin.
-                    No sign-up fees, no monthly fees, no activation fees, no cancellation fees, no bank routing fees. 
-                    Keeping it simple.
-                </p>
-                
-                <span class="top-space bot-space"><button class="vp-static-button vp-pricing-btn center">TELL ME MORE ABOUT GETTING PAID</button></span>
+            <div class="col-md-10">
+                <div class="faq-details faq-general" data-section="general">
+                    place holder for general
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="faq-details faq-selling" data-section="selling">
+                    place holder for selling
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="faq-details faq-paid" data-section="paid">
+                    place holder for paid
+                </div>
             </div>
         </div>
     </div><!-- End of .pricng-body-one -->
-    <div class="body-two">
-        
-    </div> <!-- End of .features-body-two-->
 </section>
 
 <section class="lower-body">
-    <div class="pricing-cta">
+    <div class="faq-cta">
         <div class="features-cta-title">
             <h2> Are you ready to use ViewPal </h2>
         </div>
