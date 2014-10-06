@@ -314,11 +314,11 @@
 <section class="lower-body">
     <div class="features-cta">
         <div class="features-cta-title">
-            <h2> Are you ready to use ViewPal </h2>
+            <h2> Are you ready to use ViewPal? </h2>
         </div>
         <div class="features-cta-btn-row">
-            <a href="../navbar/" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
-            <a href="<?php echo base_url()."index.php/whyviewpal"?>" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
+            <a href="<?php echo base_url()."index.php/user/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
+            <a href="<?php echo base_url()."index.php/whyviewpal"?>" class="btn cta-btn btn-login">NO, I NEED TO KNOW WHY CHOOSING VIEWPAL</a>       
         </div>
     </div>
 </section>

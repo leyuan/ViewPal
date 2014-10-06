@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="Lucius">
-        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+        <link rel="shortcut icon" href="<?php echo public_url()."imgs/graphicon.png"?>">
         <title>ViewPal features: The best way to monetize your website</title>
         
         <!-- Core Stylesheets -->

@@ -22,10 +22,10 @@
               <ul class="nav navbar-nav navbar-left">
                 <li><a href="<?php echo base_url()."index.php/features"?>">Features</a></li>
                 <li><a href="<?php echo base_url()."index.php/whyviewpal"?>">Why ViewPal</a></li>
-                <li class="active"><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
+                <li><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
                 <li><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
                 <li><a href="<?php echo base_url()."index.php/contact"?>">Contact</a></li>
-                <li><a href="<?php echo base_url()."index.php/hiring"?>" class="nav-hiring">Career</a></li>
+                <li  class="active"><a href="<?php echo base_url()."index.php/hiring"?>" class="nav-hiring">Career</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo base_url()."index.php/user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
@@ -103,7 +103,7 @@
                     Our mission is to redefine the relationship between content providers and their readers.
                     Join us as we reshape the publication technology landscape.
                 </p>
-                <a class="btn hiring-btn hiring-apply-btn" id="applybtn" onclick="applynow()"> Opening Positions </a>
+                <a class="btn hiring-btn hiring-apply-btn" id="applybtn" onclick="applynow()"> Open Positions </a>
             </div>
         </div>
     </div> <!-- End of .hiring-body-two-->
@@ -171,11 +171,11 @@
 <section class="lower-body">
     <div class="hiring-cta">
         <div class="features-cta-title">
-            <h2> Are you ready to use ViewPal </h2>
+            <h2> Are you ready to use ViewPal? </h2>
         </div>
         <div class="features-cta-btn-row">
-            <a href="../navbar/" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
-            <a href="../navbar-static-top/" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
+            <a href="<?php echo base_url()."index.php/user/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
+            <a href="<?php echo base_url()."index.php/features"?>" class="btn cta-btn btn-login">NO, I NEED TO SEE MORE FEATURES</a>       
         </div>
     </div>
 </section>

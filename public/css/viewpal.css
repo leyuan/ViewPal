@@ -354,6 +354,8 @@ body, html {
 }
 
 .nav-right {
+    position: relative;
+    z-index: 1;
     float: right;
     padding-right: 4%;
     width: 300px;
@@ -693,7 +695,7 @@ body, html {
 }
 
 .cta-btn {
-    padding-top: 12px;
+    padding-top: 18px;
     min-width: 300px;
     min-height: 50px;
     font-weight: 700;
@@ -769,7 +771,7 @@ body, html {
 
 /*** WhyViewPal Body Two ***/
 .whyviewpal-body-two-title {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .whyviewpal-body-two-content {
@@ -783,6 +785,10 @@ body, html {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 30px;
+}
+
+.trust-img-container:hover {
+    margin-top: -10px;
 }
 
 .whyviewpal-trust {
@@ -887,6 +893,15 @@ body, html {
     background: rgba(91,181,222,0.2) !important;
 }
 
+#pricing-more {
+    display: none;
+}
+
+#pricing-more > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /*** Pricing Body Two ***/
 .pricing-body-two-title > h4 {
     margin-bottom: 0px;
@@ -977,12 +992,12 @@ body, html {
 .hiring-btn {
     margin-top: 100px;
     height: 70px;
-    color: white;
+    color: #82c8bd;
     font-weight: 700;
     background-color: transparent;
     border: 2px solid;
     border-radius: 10px;
-    border-color: white;
+    border-color: #82c8bd;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 

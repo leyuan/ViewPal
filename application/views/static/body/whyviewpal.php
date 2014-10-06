@@ -119,22 +119,22 @@
             </div>
             <div class="whyviewpal-body-two-content">
                 <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
-                    <img src="<?php echo public_url()."imgs/t1.png"?>" class="whyviewpal-trust">  
+                    <a href="http://ualberta.ca"><img src="<?php echo public_url()."imgs/t1.png"?>" class="whyviewpal-trust"></a>
                 </span>
                 <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
-                    <img src="<?php echo public_url()."imgs/t2.png"?>" class="whyviewpal-trust">  
+                    <a href="http://http://www.forbes.com/"><img src="<?php echo public_url()."imgs/t2.png"?>" class="whyviewpal-trust"></a>
                 </span>
                  <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container"> 
-                    <img src="<?php echo public_url()."imgs/t3.png"?>" class="whyviewpal-trust">  
+                    <a href="http://www.tecedmonton.com/"><img src="<?php echo public_url()."imgs/t3.png"?>" class="whyviewpal-trust"> </a>
                 </span>
                 <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
-                    <img src="<?php echo public_url()."imgs/t4.png"?>" class="whyviewpal-trust">  
+                    <a href="http://www.businessinsider.com/"><img src="<?php echo public_url()."imgs/t4.png"?>" class="whyviewpal-trust"></a>
                 </span>
                 <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
-                    <img src="<?php echo public_url()."imgs/t5.png"?>" class="whyviewpal-trust">  
+                    <a href="http://entrepreneurship.ualberta.ca/ehub"><img src="<?php echo public_url()."imgs/t5.png"?>" class="whyviewpal-trust"></a>
                 </span>
                 <span class="col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center trust-img-container">
-                    <img src="<?php echo public_url()."imgs/t6.png"?>" class="whyviewpal-trust">  
+                    <a href="http://techcrunch.com/"><img src="<?php echo public_url()."imgs/t6.png"?>" class="whyviewpal-trust"></a>
                 </span>           
             </div>
         </div>
@@ -144,11 +144,11 @@
 <section class="lower-body">
     <div class="whyviewpal-cta">
         <div class="features-cta-title">
-            <h2> Are you ready to use ViewPal </h2>
+            <h2> Are you ready to use ViewPal? </h2>
         </div>
         <div class="features-cta-btn-row">
-            <a href="../navbar/" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
-            <a href="<?php echo base_url()."index.php/pricing"?>" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
+            <a href="<?php echo base_url()."index.php/user/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
+            <a href="<?php echo base_url()."index.php/pricing"?>" class="btn cta-btn btn-login">NO, I NEED TO SEE THE PRICING</a>       
         </div>
     </div>
 </section>

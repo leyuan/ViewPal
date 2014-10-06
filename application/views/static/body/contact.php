@@ -53,7 +53,7 @@
         <div class="container pricing-body-container">
             <div class="center text-center contact-form">
                 <h3> Reach out to us!</h3>
-                <p> Got a question about Lander? Are you interested in partnering with us? Have some suggestions or just want to say hi? Contact us: </p>
+                <p> Got a question about ViewPal? Are you interested in partnering with us? Have some suggestions or just want to say hi? Contact us: </p>
                 <form role="form">
                     <div class='form-group'>
                         <input type="text" class="form-control contact-form-element" id="hiring-name" placeholder="Name">
@@ -79,11 +79,11 @@
 <section class="lower-body">
     <div class="contact-cta">
         <div class="features-cta-title">
-            <h2> Are you ready to use ViewPal </h2>
+            <h2> Are you ready to use ViewPal? </h2>
         </div>
         <div class="features-cta-btn-row">
-            <a href="../navbar/" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
-            <a href="../navbar-static-top/" class="btn cta-btn btn-login">NO, I NEED TO VIEW SOME RESUTLS</a>       
+            <a href="<?php echo base_url()."index.php/user/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
+            <a href="<?php echo base_url()."index.php/features"?>" class="btn cta-btn btn-login">NO, I NEED TO SEE MORE FEATURES</a>       
         </div>
     </div>
 </section>
