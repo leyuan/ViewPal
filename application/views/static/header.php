@@ -16,7 +16,7 @@
         <link type="text/css" rel="stylesheet" href="<?php echo public_url()."lightSlider/css/lightSlider.css"?>"/>
         
         <!-- Important plugins -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="<?php echo public_url()."js/jquery.js"?>"></script>
         <script src="<?php echo public_url()."js/bootstrap.js"?>"></script>
         <script src="<?php echo public_url()."lightSlider/js/jquery.lightSlider.js"?>"></script>
         <script src="<?php echo public_url()."js/uikit.min.js"?>"></script>

@@ -55,10 +55,10 @@
                 <div class="blog-img-container">
                     <img src="<?php echo public_url()."imgs/blog1.png"?>" class="blog-feature-img">
                 </div>
-                <div class="blog-title">
+                <div class="blog-title center">
                     <h2>Micropayments and Subscriptions: How Business Models for Startups are Shifting</h2>
                 </div>
-                <div class="blog-info">
+                <div class="blog-info center">
                     <h5>Chris Cameron</h5>
                 </div>
                 <div class="blog-content center">

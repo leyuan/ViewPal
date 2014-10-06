@@ -1186,7 +1186,6 @@ body, html {
 .blog-element {
     display: block;
     overflow: hidden;
-    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1196,13 +1195,8 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     width: 425px;
-    height: 425px;
     margin: 0 auto;
     border-radius: 350px;
-}
-
-.blog-title {
-    padding-top: 40px;
 }
 
 .blog-title > h2 {
@@ -1212,8 +1206,12 @@ body, html {
 }
 
 .blog-title {
-    width: 90%;
+    width: 60%;
     padding-top: 30px;
+}
+
+.blog-info {
+    width: 60%;
 }
 
 .blog-info > h5 {
@@ -1222,6 +1220,7 @@ body, html {
 }
 
 .blog-content {
+    width: 60%;
     padding-top: 50px;
 }
 
@@ -1494,7 +1493,7 @@ and (max-width: 991px) {
 }
 
 @media only screen
-and (min-width: 401px)
+and (min-width: 320px)
 and (max-width: 800px) {
     
     .home-text-container {
@@ -1512,6 +1511,18 @@ and (max-width : 767px) {
     .nav-container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    
+    .blog-title, .blog-info, .blog-content {
+        width: 80%;
+    }
+    
+    .blog-title > h2 {
+        font-size: 1.9em;
+    }
+    
+    .blog-content > p {
+        font-size: 1.2em;
     }
 }
 
