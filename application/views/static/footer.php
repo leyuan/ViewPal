@@ -4,18 +4,18 @@
                     <div class='upper-footer'>
                         <div class="footer-col col-xs-12 col-sm-3 col-md-3 col-lg-3 text-left">
                             <h4>About ViewPal</h4>
-                                <a href="<?php echo base_url()."index.php/features"?>">Features</a>
-                                <a href="<?php echo base_url()."index.php/hiring"?>">Career</a>
+                                <a href="<?php echo base_url()."features"?>">Features</a>
+                                <a href="<?php echo base_url()."hiring"?>">Career</a>
                         </div>
                         <div class="footer-col col-xs-12 col-sm-3 col-md-3 col-lg-3 text-left">
                             <h4>Help & Resources</h4>
-                                <a href="<?php echo base_url()."index.php/contact"?>">Contact</a>
-                                <a href="<?php echo base_url()."index.php/blog"?>">Blog</a>
+                                <a href="<?php echo base_url()."contact"?>">Contact</a>
+                                <a href="<?php echo base_url()."blog"?>">Blog</a>
                         </div>
                         <div class="footer-col col-xs-12 col-sm-3 col-md-3 col-lg-3 text-left">
                             <h4>Commercial</h4>
-                            <a href="<?php echo base_url()."index.php/whyviewpal"?>">Why ViewPal</a>
-                                <a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a>
+                            <a href="<?php echo base_url()."whyviewpal"?>">Why ViewPal</a>
+                                <a href="<?php echo base_url()."pricing"?>">Pricing</a>
                         </div>
                         <div class="footer-col col-xs-12 col-sm-3 col-md-3 col-lg-3 text-left footer-4">
                             <h4>Try ViewPal for free</h4>

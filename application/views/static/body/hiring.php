@@ -20,16 +20,16 @@
 
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-left">
-                <li><a href="<?php echo base_url()."index.php/features"?>">Features</a></li>
-                <li><a href="<?php echo base_url()."index.php/whyviewpal"?>">Why ViewPal</a></li>
-                <li><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
-                <li><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
-                <li><a href="<?php echo base_url()."index.php/contact"?>">Contact</a></li>
-                <li  class="active"><a href="<?php echo base_url()."index.php/hiring"?>" class="nav-hiring">Career</a></li>
+                <li><a href="<?php echo base_url()."features"?>">Features</a></li>
+                <li><a href="<?php echo base_url()."whyviewpal"?>">Why ViewPal</a></li>
+                <li><a href="<?php echo base_url()."pricing"?>">Pricing</a></li>
+                <li><a href="<?php echo base_url()."blog"?>">Blog</a></li>
+                <li><a href="<?php echo base_url()."contact"?>">Contact</a></li>
+                <li  class="active"><a href="<?php echo base_url()."hiring"?>" class="nav-hiring">Career</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo base_url()."index.php/user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
-                <li><a href="<?php echo base_url()."index.php/user/login"?>" class="btn nav-btn btn-login">LOG IN</a></li>
+                <li><a href="<?php echo base_url()."user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
+                <li><a href="<?php echo base_url()."user/login"?>" class="btn nav-btn btn-login">LOG IN</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -174,8 +174,8 @@
             <h2> Are you ready to use ViewPal? </h2>
         </div>
         <div class="features-cta-btn-row">
-            <a href="<?php echo base_url()."index.php/user/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
-            <a href="<?php echo base_url()."index.php/features"?>" class="btn cta-btn btn-login">NO, I NEED TO SEE MORE FEATURES</a>       
+            <a href="<?php echo base_url()."user/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
+            <a href="<?php echo base_url()."features"?>" class="btn cta-btn btn-login">NO, I NEED TO SEE MORE FEATURES</a>       
         </div>
     </div>
 </section>

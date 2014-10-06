@@ -28,9 +28,9 @@
                 </span>
                 <span class="nav-right text-right">
                     <span class='home-hiring'>
-                        <a href="<?php echo base_url()."index.php/hiring"?>" class="a-home-hiring"><u>We're Hiring</u></a>
+                        <a href="<?php echo base_url()."hiring"?>" class="a-home-hiring"><u>We're Hiring</u></a>
                     </span>
-                    <a href="<?php echo base_url()."index.php/signin"?>" class="btn home-signin">Sign In</a>
+                    <a href="<?php echo base_url()."signin"?>" class="btn home-signin">Sign In</a>
                 </span>
             </div>
             <div class="home-section home-body">
@@ -38,8 +38,8 @@
                     <h1>You create quality content</h1>
                     <h1 class="viewpal-blue">Viewpal helps you monetize it</h1>
                     <span class="home-body-btn">
-                         <a href="<?php echo base_url()."index.php/user/signup"?>" class="btn home-btn btn-home-try">Try ViewPal Risk Free</a>
-                         <a href="<?php echo base_url()."index.php/features"?>" class="btn home-btn btn-home-tour">Take a Tour</a>
+                         <a href="<?php echo base_url()."user/signup"?>" class="btn home-btn btn-home-try">Try ViewPal Risk Free</a>
+                         <a href="<?php echo base_url()."features"?>" class="btn home-btn btn-home-tour">Take a Tour</a>
                     </span>
                 </div>
                 <div class="home-happy-girl">
@@ -52,12 +52,12 @@
        </div>
         <div class="home-section home-footer text-center">
             <ul class="home-footer">
-                <li><a href="<?php echo base_url()."index.php/features"?>">Features</a></li>
-                <li><a href="<?php echo base_url()."index.php/whyviewpal"?>">Why ViewPal</a></li>
-                <li><a href="<?php echo base_url()."index.php/pricing"?>">Pricing</a></li>
-                <li><a href="<?php echo base_url()."index.php/blog"?>">Blog</a></li>
-                <li><a href="<?php echo base_url()."index.php/contact"?>">Contact</a></li>
-                <li><a href="<?php echo base_url()."index.php/hiring"?>">Career</a></li>
+                <li><a href="<?php echo base_url()."features"?>">Features</a></li>
+                <li><a href="<?php echo base_url()."whyviewpal"?>">Why ViewPal</a></li>
+                <li><a href="<?php echo base_url()."pricing"?>">Pricing</a></li>
+                <li><a href="<?php echo base_url()."blog"?>">Blog</a></li>
+                <li><a href="<?php echo base_url()."contact"?>">Contact</a></li>
+                <li><a href="<?php echo base_url()."hiring"?>">Career</a></li>
             </ul>
             <h4>© 2014 ViewPal · All rights reserved · Privacy Policy · Terms of Use</h4>
         </div>
