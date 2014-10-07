@@ -14,13 +14,13 @@ class Webmasters extends CI_Controller {
     
     public function howdy()
     {
-        $this->load->view('templates/viewpal_header');
+        $this->load->view('static/header');
         $this->load->view('webmasters/howdy');
     }
     
     public function signup()
     {
-        $this->load->view('templates/viewpal_header');
+        $this->load->view('static/header');
         $this->load->view('webmasters/wm_signupform');
     }
     
