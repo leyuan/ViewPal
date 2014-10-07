@@ -30,7 +30,7 @@
                     <span class='home-hiring'>
                         <a href="<?php echo base_url()."hiring"?>" class="a-home-hiring"><u>We're Hiring</u></a>
                     </span>
-                    <a href="<?php echo base_url()."signin"?>" class="btn home-signin">Sign In</a>
+                    <a href="<?php echo base_url()."webmaster/howdy"?>" class="btn home-signin">Sign In</a>
                 </span>
             </div>
             <div class="home-section home-body">
@@ -38,7 +38,7 @@
                     <h1>You create quality content</h1>
                     <h1 class="viewpal-blue">Viewpal helps you monetize it</h1>
                     <span class="home-body-btn">
-                         <a href="<?php echo base_url()."user/signup"?>" class="btn home-btn btn-home-try">Try ViewPal Risk Free</a>
+                         <a href="<?php echo base_url()."webmaster/signup"?>" class="btn home-btn btn-home-try">Try ViewPal Risk Free</a>
                          <a href="<?php echo base_url()."features"?>" class="btn home-btn btn-home-tour">Take a Tour</a>
                     </span>
                 </div>

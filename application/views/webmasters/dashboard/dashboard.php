@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="">
                                         <div class="dashboard-summary-row">
-                                            <span class="span6">Name: <p class="good-blue-medium"><?php echo $summary['mid'];?></p></span>
+                                            <span class="span6">Client ID: <p class="good-blue-medium"><?php echo $summary['mid'];?></p></span>
                                             <span class="span6">Register Date: <p class="good-blue-medium"><?php echo $summary['date'];?></p></span>
                                         </div>
                                         <div class="dashboard-summary-row">

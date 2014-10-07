@@ -22,7 +22,7 @@
                             <p>
                                 Sign up to enter for chance to use ViewPal. Get our complementary 30-day Free Trial. 
                             </p>
-                            <button class="btn footer-btn"> GET STARTED</button>
+                            <a href="webmaster/signup" class="btn footer-btn"> GET STARTED</a>
                         </div>                        
                     </div>
                 </div>

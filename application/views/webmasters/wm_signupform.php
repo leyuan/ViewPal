@@ -3,7 +3,7 @@
     <h3>Pleas fill in the information below</h3>
     <hr>
     <div class='webmaster-signup-form'>
-        <form action='<?php echo base_url()."index.php/webmaster/signup/welcome"?>' onsubmit="return user_register();" role='form' method="POST">
+        <form action='<?php echo base_url()."webmaster/signup/welcome"?>' onsubmit="return user_register();" role='form' method="POST">
                 <div class='form-group'>
                     <label for='wmname'>WebMaster Name</label>
                     <input type='text' class='form-control' name='wmname' placeholder='your name'>

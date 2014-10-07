@@ -4,11 +4,11 @@
     </div>
     <div class="useful-link-container">
         <ul>
-            <li><a href="<?php echo base_url()."index.php/tutorial/webmaster"?>">How do I work with Viewpal?</a></li>
+            <li><a href="<?php echo base_url()."tutorial/webmaster"?>">How do I work with Viewpal?</a></li>
         </ul>
     </div>
     <div class="wm-login-container">
-        <form action="<?php echo base_url()."index.php/webmaster/login"?>" onsubmit="" method="POST">
+        <form action="<?php echo base_url()."webmaster/login"?>" onsubmit="" method="POST">
             <div class='form-group'>
                 <label for='username'>Name</label>
                 <input type='text' class='form-control' name='wmname' placeholder='your name'>
@@ -23,6 +23,6 @@
         </form>
     </div>
     <div class="wm-register-container">
-        <a href="<?php echo base_url()."index.php/webmaster/signup";?>">New webmaster? Click here to Register</a>
+        <a href="<?php echo base_url()."webmaster/signup";?>">New webmaster? Click here to Register</a>
     </div>
 </div>

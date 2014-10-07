@@ -13,8 +13,8 @@
               </button>
                 <span class="logo text-right"><a class="navbar-brand" href="<?php echo base_url();?>"><img src="<?php echo public_url()."imgs/logo_white.png"?>" class="nav-logo"></a></span>
                 <span class="nav navbar-nav navbar-sub-container">
-                    <a href="../navbar/" class="btn nav-btn nav-btn btn-signup nav-sub-btn">SIGN UP</a>
-                    <a href="../navbar-static-top/" class="btn nav-btn btn-login nav-sub-btn">LOG IN</a>
+                    <a href="webmaster/signup" class="btn nav-btn nav-btn btn-signup nav-sub-btn">SIGN UP</a>
+                    <a href="webmaster/howdy" class="btn nav-btn btn-login nav-sub-btn">LOG IN</a>
                 </span>  
             </div>
 
@@ -86,7 +86,7 @@
             <h2> Are you ready to use ViewPal? </h2>
         </div>
         <div class="features-cta-btn-row">
-            <a href="<?php echo base_url()."user/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
+            <a href="<?php echo base_url()."webmaster/signup"?>" class="btn cta-btn btn-signup">YES, I'M READY. SIGN ME UP NOW</a>
             <a href="<?php echo base_url()."features"?>" class="btn cta-btn btn-login">NO, I NEED TO SEE MORE FEATURES</a>       
         </div>
     </div>

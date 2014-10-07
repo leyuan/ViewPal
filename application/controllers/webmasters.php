@@ -57,7 +57,7 @@ class Webmasters extends CI_Controller {
             $session_data = array('wmname' => $wmname);
             $this->session->set_userdata($session_data);
             echo $wmname;
-            $dashboard = base_url()."index.php/webmaster/dashboard?wmname=".$wmname;
+            $dashboard = base_url()."webmaster/dashboard?wmname=".$wmname;
             header('Location:'.$dashboard);
         }
         else
