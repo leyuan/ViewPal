@@ -57,31 +57,32 @@
             <div class="hiring-body-one-content text-center">
                 <ul id="content-slider" class="list-unstyled clearfix cSdemo cS-hidden" >
                     <li>
-                        <div class="center">
+                        <div class="center hiring-slide">
                             <h3>Our Mission</h3>
                             <div class="features">
-                                <p> We are bringing the next-level </p>
-                                <p> web monetization method. </p>
+                                <p> We are at the cutting edge of
+                                how people monetize content online. </p>
                             </div>
                         </div>
                         <span class="h100"></span>
                     </li>
                     <li>
-                        <div class="center">
-                            <h3>Your Dream</h3>
+                        <div class="center hiring-slide">
+                            <h3>Your Ideas</h3>
                             <div class="features">
-                                <p> You are not working for anyone </p>
-                                <p> but your dream </p>
+                                <p> If you think it, you can create it.
+                                We love your suggestions for how to shape the company. </p>
                             </div>
                         </div>
                         <span class="h100"></span>
                     </li>
                     <li>
-                        <div class="center">
+                        <div class="center hiring-slide">
                             <h3>The Life</h3>
                             <div class="features">
-                                <p> Full benefits, good pay  </p>
-                                <p> talented people and a cute dog </p>
+                                <p> Full benefits, good pay,
+                                working alongside talented people,
+                                and a super cute company dog. </p>
                             </div>
                         </div>
                         <span class="h100"></span>

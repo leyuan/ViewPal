@@ -224,6 +224,11 @@ h3 {
 }
 
 /*** Nav Menu ***/
+.nav-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .logo {
     display: block;
     overflow: hidden;
@@ -258,7 +263,7 @@ h3 {
 .navbar-default .navbar-left > li > a {
     font-weight: 400;
     color: #fff !important;
-    font-size: 1.125em !important;
+    font-size: 1.3em !important;
 }
 
 .navbar-default .navbar-left > li > a:hover{
@@ -766,7 +771,7 @@ body, html {
     min-height: 240px;
     background-image: url("../imgs/timeline.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 /*** WhyViewPal Body Two ***/
@@ -959,7 +964,7 @@ body, html {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 604px;
     height: 604px;
     background-image: url("../imgs/vp-whywork.png");
     background-position: center top;
@@ -984,15 +989,23 @@ body, html {
     font-weight: 700;
 }
 
+.hiring-slide {
+    width: 95%;
+}
+
+.hiring-slide > .features > p {
+    font-size: 1.4em;
+}
+
 .center > h3 {
     font-size: 2.1em;
     color: #fff;
 }
 
 .hiring-btn {
-    margin-top: 100px;
+    margin-top: 70px;
     height: 70px;
-    color: #82c8bd;
+    color: #fff;
     font-weight: 700;
     background-color: transparent;
     border: 2px solid;
@@ -1160,12 +1173,14 @@ body, html {
     margin-top: 0px;
     width: 80%;
     font-size: 1.2em;
+    color: #269abc;
 }
 
 .hiring-submit-btn {
     margin-top: 0px;
     width: 50%;  
     font-size: 1.2em;
+    color: #269abc;
 }
 /******************************** Css for Blog ********************************/
 .blog-upper-body {
@@ -1442,6 +1457,14 @@ body, html {
 
 
 /******************************** For Media ***********************************/
+
+@media only screen
+and (max-width : 550px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+}
+
 @media only screen 
 and (max-width : 1000px) {
     /* Styles */
@@ -1451,8 +1474,6 @@ and (max-width : 1000px) {
 
     .nav-container {
         margin: 0;    
-        padding-left: 10px;
-        padding-right: 10px;
         width: 100%;
     }
 
@@ -1514,8 +1535,10 @@ and (max-width: 991px) {
     }
 }
 
+
+
 @media only screen
-and (min-width: 320px)
+and (min-width: 220px)
 and (max-width: 800px) {
     
     .home-text-container {
@@ -1599,6 +1622,33 @@ and (max-width: 767px) {
 }
 
 @media only screen
+and (min-width: 220px)
+and (max-width: 650px) {
+    .hiring-body-one-content {
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+    
+    .hiring-slide > h3 {
+        display: none;
+    }
+    
+    .hiring-slide > .features > p {
+        font-size: 1.2em;
+    }
+    
+    #content-slider {
+        margin-top: 0px;
+    }
+    
+    .hiring-btn {
+        margin-top: 30px;
+        color: #82c8bd;
+    }
+}
+
+@media only screen
 and (max-width: 576px) {
     .home-body-btn {
         margin-top: 20px;
@@ -1620,10 +1670,6 @@ and (max-width: 500px) {
 
     .headline-sub-title > h3 {
         font-size: 1.0em;
-    }
-    
-    .cta-btn {
-        min-width: 100%;
     }
     
     .features-cta-title > h2 {

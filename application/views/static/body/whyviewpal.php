@@ -85,9 +85,9 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                     <span class="test-text">
-                        <h3>Using Lander to grow my agency</h3>
+                        <h3>Using ViewPal on my blog</h3>
                         <p style="padding-top: 30px;">
-                            We liked how easy it was to set-up ViewPal. Their dashboard made it easy to 
+                            I liked how easy it was to set-up ViewPal. Their dashboard made it easy to 
                             experiment and find pricing that works for us. There is next to no maintenance 
                             and everything is really polished. ViewPal is definitely the best option available.
                         </p>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                     <span class="test-text">
-                        <h3>Using Lander to grow my agency</h3>
+                        <h3>Using ViewPal to grow my business</h3>
                         <p style="padding-top: 30px;">
                             I am amazed how well their micropayment approach works. We had been considering putting 
                             up a paywall for years, but were always afraid that our users would leave. ViewPal is easy 
