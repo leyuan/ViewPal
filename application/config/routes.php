@@ -38,11 +38,6 @@
 |
 */
 /*route for news*/
-$route['news/create'] = 'news/create';
-$route['news/(:any)'] = 'news/view/$1';
-$route['news'] = 'news';
-$route['(:any)'] = 'users/$1';
-$route['users/checkout'] = 'users/checkout';
 
 
 
@@ -65,7 +60,9 @@ $route['user/logout'] = 'users/logout';
 
 
 /***Route for Webmaster***/
-$route['webmaster/dashboard'] = 'webmasters/dashboard';
+//$route['webmaster/(:any)'] = 'webmasters/test/$1';
+$route['webmaster/dashboard/(:any)'] = 'webmasters/dashboard/$1';
+
 /*signup*/
 $route['webmaster/howdy'] = 'webmasters/howdy';
 $route['webmaster/signup'] = 'webmasters/signup';
@@ -73,6 +70,7 @@ $route['webmaster/signup/welcome'] = 'webmasters/newwm_welcome';
 /*login/logout*/
 $route['webmaster/login'] = 'webmasters/login';
 $route['webmaster/logout'] = 'webmasters/logout';
+
 
 
 /***END Route for Webmaster***/

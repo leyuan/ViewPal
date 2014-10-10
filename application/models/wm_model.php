@@ -35,7 +35,7 @@ class Wm_model extends CI_Model {
          */
         $wmname = $this->input->post('wmname');
         $pwd = $this->input->post('wmpwd');
-        $sql = "select * from Webmaster where Name='".$wmname."'";
+        $sql = "select * from webmaster where Name='".$wmname."'";
         $query = $this->db->query($sql);
         foreach ($query->result() as $row)
         {

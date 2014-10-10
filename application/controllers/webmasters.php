@@ -56,9 +56,9 @@ class Webmasters extends CI_Controller {
             //$_SESSION['wmname'] = $wmname;
             $session_data = array('wmname' => $wmname);
             $this->session->set_userdata($session_data);
-            echo $wmname;
-            $dashboard = base_url()."webmaster/dashboard?wmname=".$wmname;
+            $dashboard = base_url()."webmaster/dashboard/".$wmname;
             header('Location:'.$dashboard);
+            
         }
         else
         {
@@ -72,10 +72,9 @@ class Webmasters extends CI_Controller {
         header('Location: '.base_url());
     }
     
-    public function dashboard()
+    public function dashboard($user_url_input)
     {
         $wmname = $this->session->userdata('wmname');
-        $user_url_input = filter_input(INPUT_GET, 'wmname');
         if($user_url_input && isset($wmname))
         {
             if( $user_url_input == $wmname){
@@ -92,13 +91,18 @@ class Webmasters extends CI_Controller {
                 $this->load->view('webmasters/dashboard/footer',$data);
             }else{
                 //should show 403
-                show_404();
+                echo "hello2";
             }
         }else
         {
             // should show 403.
-            show_404();
+            echo "user input:".$user_url_input."<br>";
+            echo "hello";
         }
         
+    }
+    
+    public function test($var1) {
+        echo "$var1";
     }
 }

@@ -28,8 +28,8 @@
                 <li><a href="<?php echo base_url()."hiring"?>" class="nav-hiring">Career</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo base_url()."user/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
-                <li><a href="<?php echo base_url()."user/login"?>" class="btn nav-btn btn-login">LOG IN</a></li>
+                <li><a href="<?php echo base_url()."webmaster/signup"?>" class="btn nav-btn btn-signup">SIGN UP</a></li>
+                <li><a href="<?php echo base_url()."webmaster/howdy"?>" class="btn nav-btn btn-login">LOG IN</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>

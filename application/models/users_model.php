@@ -48,7 +48,7 @@ class Users_model extends CI_Model {
          */
         $username = $this->input->post('username');
         $pwd = $this->input->post('pwd');
-        $sql = "select * from User where Name='".$username."'";
+        $sql = "select * from user where Name='".$username."'";
         $query = $this->db->query($sql);
         foreach ($query->result() as $row)
         {
