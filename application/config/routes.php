@@ -64,6 +64,7 @@ $route['user/logout'] = 'users/logout';
 $route['webmaster/dashboard/(:any)'] = 'webmasters/dashboard/$1';
 
 /*signup*/
+$route['webmaster/confirmation'] = 'webmasters/confirmation';
 $route['webmaster/howdy'] = 'webmasters/howdy';
 $route['webmaster/signup'] = 'webmasters/signup';
 $route['webmaster/signup/welcome'] = 'webmasters/newwm_welcome';

@@ -16,15 +16,24 @@ class Wm_model extends CI_Model {
         $hashed_password = crypt($pwd);
         $prefix = "vp";
         $mid = $prefix.uniqid();
+        /** get a random confirm id **/
+        $code=rand(100000,100000000);
         $data = array(
             'Mid' => $mid,
             'Name' => $name,
             'Email' => $email,
             'Pwd' => $hashed_password,
-            'website_url' => $website
+            'website_url' => $website,
+            'Confirm_id' => $code
         );
         $this->db->set('Date', 'NOW()', FALSE);
-        return $this->db->insert('webmaster', $data);  
+        $this->db->insert('webmaster', $data);
+        
+        $webmaster = array();
+        $webmaster["id"] = $mid;
+        $webmaster["email"] = $email;
+        $webmaster["code"] = $code;
+        return $webmaster;
     }
     
     public function login() {

@@ -9,6 +9,7 @@ class Webmasters extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('wm_model');
+        $this->load->model('email_model');
         $this->load->library('session');
     }
     
@@ -28,21 +29,28 @@ class Webmasters extends CI_Controller {
     {
         try{
             /** save user info into database here**/
-            $name = $this->input->post('wmname');
+            $wmname = $this->input->post('wmname');
             $pwd = $this->input->post('wmpwd');
             $email = $this->input->post('wmemail');
             $website = $this->input->post('weburl');
-            $this->wm_model->set_wm($name,$pwd,$email,$website);
-            $wmname = $this->input->post('wmname');
-            //echo $wmname;
+            $webmaster_array = $this->wm_model->set_wm($wmname,$pwd,$email,$website);
+            /** Send a notification email **/
+            
+            /** send confirmation email to webmaster **/
+            try{
+                $this->email_model->wm_confirmation($webmaster_array["id"], $webmaster_array["email"], $webmaster_array["code"]);
+            } catch (Exception $ex) {
+                echo 'Caught exception: ',  $ex->getMessage(), "\n";
+            }
+            /** set sessions for webmasters **/
             $session_data = array('wmname' => $wmname);
             $this->session->set_userdata($session_data);
-            //$_SESSION['wmname'] = $wmname;
             $data['wmname'] = $wmname;
+            /** load views **/
             $this->load->view('templates/viewpal_header');
             $this->load->view('webmasters/welcome',$data); 
         } catch (Exception $ex) {
-            echo 'Caught exception: ',  $e->getMessage(), "\n";
+            echo 'Caught exception: ',  $ex->getMessage(), "\n";
         }        
     }
     

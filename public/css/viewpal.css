@@ -990,7 +990,7 @@ body, html {
 }
 
 .hiring-slide {
-    width: 95%;
+    width: 92%;
 }
 
 .hiring-slide > .features > p {
@@ -1010,7 +1010,7 @@ body, html {
     background-color: transparent;
     border: 2px solid;
     border-radius: 10px;
-    border-color: #82c8bd;
+    border-color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -1174,6 +1174,7 @@ body, html {
     width: 80%;
     font-size: 1.2em;
     color: #269abc;
+    border-color: #269abc;
 }
 
 .hiring-submit-btn {
@@ -1181,6 +1182,7 @@ body, html {
     width: 50%;  
     font-size: 1.2em;
     color: #269abc;
+    border-color: #269abc;
 }
 /******************************** Css for Blog ********************************/
 .blog-upper-body {
