@@ -36,6 +36,21 @@ class Wm_model extends CI_Model {
         return $webmaster;
     }
     
+    public function verify_wm($mid, $email, $code){
+       $query = $this->db->get_where('webmaster', array('Mid' => $mid));
+       $row = $query->row();
+       if($email == $row->Email && $code == $row->Confirm_Id) {
+            // change verfication value to 1
+            $data = array('Verified' => 1);
+            $this->db->where('Mid', $mid);
+            $this->db->update('webmaster', $data); 
+            return true;
+       } else {
+            return false;
+       }
+       
+    }
+    
     public function login() {
         /*
          * status 0 = can't find the user

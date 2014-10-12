@@ -1,6 +1,6 @@
 <!-- Webmaster_howdy Body Page -->
 <section class="upper-body">
-    <div class="pricing-upper-body upper-body">
+    <div class="wmsign-upper-body upper-body">
         <!-- Fixed navbar -->
         <div class="navbar navbar-default" role="navigation">
           <div class="container nav-container">
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>  
-</section><!-- End of .pricing-upper-body -->
+</section><!-- End of .wmsign-upper-body -->
 
 <section class="main-body">
     <div class="body-one">
@@ -65,7 +65,7 @@
 </section>
 
 <section class="lower-body">
-    <div class="pricing-cta">
+    <div class="wmsign-cta">
         <div class="features-cta-title">
             <h2> Are you ready to use ViewPal? </h2>
         </div>

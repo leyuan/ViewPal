@@ -1436,6 +1436,14 @@ body, html {
     color: #BBB8B8;
 }
 /******************************** Webmaster Signup ****************************/
+.wmsign-upper-body, .wmsign-cta {
+    background-color: #ddd436;
+}
+
+.wmsign-cta {
+    min-height: 320px;
+}
+
 .webmaster-signup-container {
     margin-top: 40px;
     margin-bottom: 40px;

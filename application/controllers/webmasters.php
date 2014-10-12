@@ -34,6 +34,7 @@ class Webmasters extends CI_Controller {
             $email = $this->input->post('wmemail');
             $website = $this->input->post('weburl');
             $webmaster_array = $this->wm_model->set_wm($wmname,$pwd,$email,$website);
+            var_dump($webmaster_array);
             /** Send a notification email **/
             
             /** send confirmation email to webmaster **/
@@ -45,13 +46,39 @@ class Webmasters extends CI_Controller {
             /** set sessions for webmasters **/
             $session_data = array('wmname' => $wmname);
             $this->session->set_userdata($session_data);
-            $data['wmname'] = $wmname;
+            
             /** load views **/
+            /*
+            $data['wmname'] = $wmname;
             $this->load->view('templates/viewpal_header');
-            $this->load->view('webmasters/welcome',$data); 
+            $this->load->view('webmasters/welcome',$data);
+             * 
+             */ 
         } catch (Exception $ex) {
             echo 'Caught exception: ',  $ex->getMessage(), "\n";
         }        
+    }
+    
+    public function confirmation() {
+        if(isset($_GET["id"]) && isset($_GET["email"]) && isset($_GET["code"])) {
+            // do the verification here
+            //http://localhost:8080/git/viewpal/webmaster/confirmation?id=vp543aee862ba91&email=wm3@w&code=59610742
+            echo "Verification starts";
+            $mid = $_GET["id"];
+            $email = $_GET["email"];
+            $code = $_GET["code"];
+            $verification = $this->wm_model->verify_wm($mid,$email,$code);
+            if($verification) {
+                // load view verified successfully
+                echo "verified successfully";
+            } else {
+                // oops something is wrong, please contact webmaster
+                echo "sorry something is wrong";
+            }
+        }else {
+            // show 403
+            echo "well, you should not visit this page";
+        }
     }
     
     public function login()
