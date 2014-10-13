@@ -34,26 +34,25 @@ class Webmasters extends CI_Controller {
             $email = $this->input->post('wmemail');
             $website = $this->input->post('weburl');
             $webmaster_array = $this->wm_model->set_wm($wmname,$pwd,$email,$website);
-            var_dump($webmaster_array);
-            /** Send a notification email **/
-            
-            /** send confirmation email to webmaster **/
-            try{
-                $this->email_model->wm_confirmation($webmaster_array["id"], $webmaster_array["email"], $webmaster_array["code"]);
-            } catch (Exception $ex) {
-                echo 'Caught exception: ',  $ex->getMessage(), "\n";
-            }
             /** set sessions for webmasters **/
             $session_data = array('wmname' => $wmname);
             $this->session->set_userdata($session_data);
+            /** Send a notification email **/
+            
+            /** send confirmation email to webmaster **/
+            $mail_status = $this->email_model->wm_confirmation($webmaster_array["id"], $webmaster_array["email"], $webmaster_array["code"]);
+            if($mail_status){
+                echo "Confirmation Email has been sent successfully";
+            } else {
+                echo "Confirmation Email sent failed";
+            }
+
             
             /** load views **/
-            /*
+            
             $data['wmname'] = $wmname;
             $this->load->view('templates/viewpal_header');
             $this->load->view('webmasters/welcome',$data);
-             * 
-             */ 
         } catch (Exception $ex) {
             echo 'Caught exception: ',  $ex->getMessage(), "\n";
         }        
@@ -63,7 +62,7 @@ class Webmasters extends CI_Controller {
         if(isset($_GET["id"]) && isset($_GET["email"]) && isset($_GET["code"])) {
             // do the verification here
             //http://localhost:8080/git/viewpal/webmaster/confirmation?id=vp543aee862ba91&email=wm3@w&code=59610742
-            echo "Verification starts";
+            echo "Verification starts<br>";
             $mid = $_GET["id"];
             $email = $_GET["email"];
             $code = $_GET["code"];
@@ -112,32 +111,39 @@ class Webmasters extends CI_Controller {
         $wmname = $this->session->userdata('wmname');
         if($user_url_input && isset($wmname))
         {
+            /** get variable in url && user is logged in **/
             if( $user_url_input == $wmname){
-                
-                $mid = $this->wm_model->get_mid($wmname);
-                $data['title'] = "Dashboard | ".$wmname;
-                $data['wmname'] = $wmname;
-                //$data['mid'] = $mid;               
-                $summary = $this->wm_model->get_summary($wmname);
-                $data['summary'] = $summary;
-                $data['payment_details'] = $this->wm_model->get_wm_details($mid);
-                $this->load->view('webmasters/dashboard/header',$data);
-                $this->load->view('webmasters/dashboard/dashboard',$data);
-                $this->load->view('webmasters/dashboard/footer',$data);
+                /** logged in name matches input url **/
+                if( $this->wm_model->checkv_wm($wmname)) {
+                    $mid = $this->wm_model->get_mid($wmname);
+                    $data['title'] = "Dashboard | ".$wmname;
+                    $data['wmname'] = $wmname;
+                    //$data['mid'] = $mid;               
+                    $summary = $this->wm_model->get_summary($wmname);
+                    $data['summary'] = $summary;
+                    $data['payment_details'] = $this->wm_model->get_wm_details($mid);
+                    $this->load->view('webmasters/dashboard/header',$data);
+                    $this->load->view('webmasters/dashboard/dashboard',$data);
+                    $this->load->view('webmasters/dashboard/footer',$data);                    
+                } else {
+                    // haven't verified yet
+                    echo "Please verify your account first";
+                }
             }else{
-                //should show 403
-                echo "hello2";
+                //trying to visit others' dashboard
+                echo "please check your webmaster name in the url";
             }
         }else
         {
-            // should show 403.
+            // either not logged in or wrong user name in url
             echo "user input:".$user_url_input."<br>";
-            echo "hello";
+            echo "either not logged in or wrong user name in url";
         }
         
     }
     
-    public function test($var1) {
+    public function test() {
+        $var1 = $_GET["var"];
         echo "$var1";
     }
 }

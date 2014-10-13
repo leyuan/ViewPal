@@ -31,9 +31,9 @@ class Email_model extends CI_Model {
 
         if(mail($wm_email,$subject,$message,$headers))
         {
-            echo "confirmation email sent";
+            return true;
         }else {
-            echo "confirmation email sent failed";
+            return false;
         }
     }
 }

@@ -60,7 +60,7 @@ $route['user/logout'] = 'users/logout';
 
 
 /***Route for Webmaster***/
-//$route['webmaster/(:any)'] = 'webmasters/test/$1';
+$route['webmaster/test'] = 'webmasters/test';
 $route['webmaster/dashboard/(:any)'] = 'webmasters/dashboard/$1';
 
 /*signup*/

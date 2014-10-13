@@ -51,6 +51,11 @@ class Wm_model extends CI_Model {
        
     }
     
+    public function checkv_wm($wmname) {
+        /** Check if this webmaster is verified yet **/
+        return true;
+    }
+    
     public function login() {
         /*
          * status 0 = can't find the user
