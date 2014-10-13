@@ -13,10 +13,10 @@
         <div class="headline">
             <div class="container">
                 <div class="headline-main-title">
-                    <h1>Webmaster</h1>
+                    <h1>Confirmation</h1>
                 </div>
                 <div class="headline-sub-title">
-                    <h3>Only one step left</h3>
+                    <h3><?php echo $conf_status;?></h3>
                 </div>
             </div>
         </div>

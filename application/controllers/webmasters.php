@@ -42,16 +42,16 @@ class Webmasters extends CI_Controller {
             /** send confirmation email to webmaster **/
             $mail_status = $this->email_model->wm_confirmation($webmaster_array["id"], $webmaster_array["email"], $webmaster_array["code"]);
             if($mail_status){
-                echo "Confirmation Email has been sent successfully";
+                $data['message'] = "Confirmation Email has been sent successfully";
             } else {
-                echo "Confirmation Email sent failed";
+                $data['message'] = "Confirmation Email sent failed";
             }
 
             
             /** load views **/
             
             $data['wmname'] = $wmname;
-            $this->load->view('templates/viewpal_header');
+            $this->load->view('static/header');
             $this->load->view('webmasters/welcome',$data);
         } catch (Exception $ex) {
             echo 'Caught exception: ',  $ex->getMessage(), "\n";
@@ -62,21 +62,38 @@ class Webmasters extends CI_Controller {
         if(isset($_GET["id"]) && isset($_GET["email"]) && isset($_GET["code"])) {
             // do the verification here
             //http://localhost:8080/git/viewpal/webmaster/confirmation?id=vp543aee862ba91&email=wm3@w&code=59610742
-            echo "Verification starts<br>";
+            $wmname = $this->session->userdata('wmname');
             $mid = $_GET["id"];
             $email = $_GET["email"];
             $code = $_GET["code"];
             $verification = $this->wm_model->verify_wm($mid,$email,$code);
             if($verification) {
                 // load view verified successfully
-                echo "verified successfully";
+                //echo "verified successfully";
+                $dashboard_url = base_url()."webmaster/dashboard/".$wmname;
+                $data['conf_status'] = "Verification succeed";
+                $data['message'] = "<h3>Verified Successfully</h3>";
+                $data['message'] .= "<a href='".$dashboard_url."'>checkout your dashboard here</a>";
+                $this->load->view('static/header');
+                $this->load->view('webmasters/confirmation', $data);
+                
             } else {
                 // oops something is wrong, please contact webmaster
-                echo "sorry something is wrong";
+                //echo "sorry something is wrong";
+                $data['conf_status'] = "Verification failed";
+                $data['message'] = "<h3>Please contact our customer service</h3>";
+                $data['message'] .= "<a>contact.viewpal@gmail.com</a>";
+                $this->load->view('static/header');
+                $this->load->view('webmasters/confirmation', $data);
             }
         }else {
             // show 403
-            echo "well, you should not visit this page";
+                //echo "Missing parameters";
+                $data['conf_status'] = "Parameters are missing";
+                $data['message'] = "<h3>Please contact our customer service</h3>";
+                $data['message'] .= "<a>contact.viewpal@gmail.com</a>";
+                $this->load->view('static/header');
+                $this->load->view('webmasters/confirmation', $data);
         }
     }
     
